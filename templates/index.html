@@ -1,8 +1,25 @@
 
 {% extends "base.html" %}
 
-{% block title %}Home | Whiteboard{% endblock %}
+{% block title %}Home | DRTZ Whiteboard{% endblock %}
 
 {% block content %}
-    <h1>Welcome to My Personal Whiteboard</h1>
+
+<section class="hero">
+
+    <p class="eyebrow">Personal Portfolio / 2026</p>
+
+    <h1>Building things,<br>learning constantly.</h1>
+
+    <p class="description">
+        A collection of projects exploring software engineering,
+        data analytics, cloud infrastructure, and artificial intelligence.
+    </p>
+
+    <a href="{{ url_for('projects') }}" class="primary-button">
+        Explore Projects <span aria-hidden="true">↗</span>
+    </a>
+
+</section>
+
 {% endblock %}
