@@ -1,3 +1,4 @@
+
 {% extends "base.html" %}
 
 {% block title %}Projects | David's Whiteboard{% endblock %}
@@ -20,14 +21,11 @@
 
             {% for project in projects %}
 
-            <a href="#" class="project-nav-item">
-                <span class="project-nav-icon">
-                    {{ project.icon }}
-                </span>
+            <a href="{{ url_for('project_detail', slug=project.slug) }}"
+               class="project-nav-item">
 
-                <span>
-                    {{ project.name }}
-                </span>
+                <span>{{ project.name }}</span>
+
             </a>
 
             {% endfor %}
@@ -53,23 +51,23 @@
         <section class="project-stats">
 
             <div class="stat-card">
-                <h2>{{ projects|length }}</h2>
+                <h2>{{ stats.total }}</h2>
                 <p>Total projects</p>
             </div>
 
             <div class="stat-card">
-                <h2>2</h2>
+                <h2>{{ stats.in_development }}</h2>
                 <p>In development</p>
             </div>
 
             <div class="stat-card">
-                <h2>3</h2>
-                <p>Data / analytics</p>
+                <h2>{{ stats.planned }}</h2>
+                <p>Planned</p>
             </div>
 
             <div class="stat-card">
-                <h2>1</h2>
-                <p>Deployed</p>
+                <h2>{{ stats.research }}</h2>
+                <p>Research</p>
             </div>
 
         </section>
@@ -88,10 +86,6 @@
 
                 <article class="project-card">
 
-                    <div class="project-card-icon">
-                        {{ project.icon }}
-                    </div>
-
                     <h3>{{ project.name }}</h3>
 
                     <p class="project-category">
@@ -108,7 +102,8 @@
                             {{ project.status }}
                         </span>
 
-                        <a href="#" class="project-open">
+                        <a href="{{ url_for('project_detail', slug=project.slug) }}"
+                           class="project-open">
                             Open →
                         </a>
 

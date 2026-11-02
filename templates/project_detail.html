@@ -1,0 +1,104 @@
+
+{% extends "base.html" %}
+
+{% block title %}{{ project.name }} | David's Whiteboard{% endblock %}
+
+{% block content %}
+
+<div class="projects-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="project-sidebar">
+
+        <a href="{{ url_for('projects') }}"
+           class="sidebar-overview">
+            <span>▦</span>
+            Overview
+        </a>
+
+        <p class="sidebar-label">PROJECTS</p>
+
+        <nav class="project-nav">
+
+            {% for item in projects %}
+
+            <a href="{{ url_for('project_detail', slug=item.slug) }}"
+               class="project-nav-item {% if item.slug == project.slug %}active{% endif %}">
+
+                {{ item.name }}
+
+            </a>
+
+            {% endfor %}
+
+        </nav>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="projects-main">
+
+        <a href="{{ url_for('projects') }}" class="back-link">
+            ← All Projects
+        </a>
+
+        <div class="project-detail-header">
+
+            <h1>{{ project.name }}</h1>
+
+            <p>{{ project.description }}</p>
+
+            <span class="project-status">
+                {{ project.status }}
+            </span>
+
+        </div>
+
+
+        <section class="detail-section">
+
+            <h2>Overview</h2>
+
+            <div class="detail-card">
+
+                <p>
+                    This project is currently
+                    {{ project.status|lower }}.
+                </p>
+
+                <p>
+                    More features and dashboards will
+                    be added as development progresses.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="detail-section">
+
+            <h2>Project Information</h2>
+
+            <div class="detail-info-grid">
+
+                <div class="detail-card">
+                    <p class="detail-label">Category</p>
+                    <h3>{{ project.category }}</h3>
+                </div>
+
+                <div class="detail-card">
+                    <p class="detail-label">Status</p>
+                    <h3>{{ project.status }}</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+{% endblock %}
