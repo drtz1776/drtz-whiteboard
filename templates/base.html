@@ -38,6 +38,11 @@
                     Home
                 </a>
 
+                <a href="{{ url_for('solutions_architect') }}"
+                   class="{{ 'active' if request.endpoint == 'solutions_architect' else '' }}">
+                    Solutions Architect
+                </a>
+
                 <a href="{{ url_for('projects') }}"
                    class="{{ 'active' if request.endpoint == 'projects' else '' }}">
                     Projects

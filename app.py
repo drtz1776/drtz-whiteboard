@@ -13,6 +13,9 @@ def home():
 def projects():
     return render_template("projects.html")
 
+@app.route("/solutions-architect")
+def solutions_architect():
+    return render_template("solutions_architect.html")
 
 @app.route("/about")
 def about():
