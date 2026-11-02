@@ -1,8 +1,129 @@
-
 {% extends "base.html" %}
 
-{% block title %}Books | Whiteboard{% endblock %}
+{% block title %}Projects | David's Whiteboard{% endblock %}
 
 {% block content %}
-    <h1>Projects</h1>
+
+<div class="projects-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="project-sidebar">
+
+        <a href="{{ url_for('projects') }}" class="sidebar-overview active">
+            <span>▦</span>
+            Overview
+        </a>
+
+        <p class="sidebar-label">PROJECTS</p>
+
+        <nav class="project-nav">
+
+            {% for project in projects %}
+
+            <a href="#" class="project-nav-item">
+                <span class="project-nav-icon">
+                    {{ project.icon }}
+                </span>
+
+                <span>
+                    {{ project.name }}
+                </span>
+            </a>
+
+            {% endfor %}
+
+        </nav>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="projects-main">
+
+        <div class="projects-heading">
+            <h1>Projects</h1>
+            <p>
+                Applications, experiments, dashboards, and other things
+                I've decided apparently need to exist.
+            </p>
+        </div>
+
+
+        <!-- PROJECT STATS -->
+        <section class="project-stats">
+
+            <div class="stat-card">
+                <h2>{{ projects|length }}</h2>
+                <p>Total projects</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>2</h2>
+                <p>In development</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>3</h2>
+                <p>Data / analytics</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>1</h2>
+                <p>Deployed</p>
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT CARDS -->
+        <section class="projects-section">
+
+            <div class="projects-section-header">
+                <h2>Your projects</h2>
+            </div>
+
+            <div class="project-grid">
+
+                {% for project in projects %}
+
+                <article class="project-card">
+
+                    <div class="project-card-icon">
+                        {{ project.icon }}
+                    </div>
+
+                    <h3>{{ project.name }}</h3>
+
+                    <p class="project-category">
+                        {{ project.category }}
+                    </p>
+
+                    <p class="project-description">
+                        {{ project.description }}
+                    </p>
+
+                    <div class="project-card-footer">
+
+                        <span class="project-status">
+                            {{ project.status }}
+                        </span>
+
+                        <a href="#" class="project-open">
+                            Open →
+                        </a>
+
+                    </div>
+
+                </article>
+
+                {% endfor %}
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
 {% endblock %}
