@@ -10,7 +10,8 @@
     <!-- LEFT SIDEBAR -->
     <aside class="project-sidebar">
 
-        <a href="{{ url_for('projects') }}" class="sidebar-overview active">
+        <a href="{{ url_for('projects') }}"
+           class="sidebar-overview active">
             <span>▦</span>
             Overview
         </a>
@@ -37,41 +38,6 @@
 
     <!-- MAIN CONTENT -->
     <main class="projects-main">
-
-        <div class="projects-heading">
-            <h1>Projects</h1>
-            <p>
-                Applications, experiments, dashboards, and other things
-                I've decided apparently need to exist.
-            </p>
-        </div>
-
-
-        <!-- PROJECT STATS -->
-        <section class="project-stats">
-
-            <div class="stat-card">
-                <h2>{{ stats.total }}</h2>
-                <p>Total projects</p>
-            </div>
-
-            <div class="stat-card">
-                <h2>{{ stats.in_development }}</h2>
-                <p>In development</p>
-            </div>
-
-            <div class="stat-card">
-                <h2>{{ stats.planned }}</h2>
-                <p>Planned</p>
-            </div>
-
-            <div class="stat-card">
-                <h2>{{ stats.research }}</h2>
-                <p>Research</p>
-            </div>
-
-        </section>
-
 
         <!-- PROJECT CARDS -->
         <section class="projects-section">

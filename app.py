@@ -12,30 +12,9 @@ def home():
 # PROJECTS OVERVIEW
 @app.route("/projects")
 def projects():
-
-    stats = {
-        "total": len(PROJECTS),
-
-        "in_development": sum(
-            p["status"] == "In Development"
-            for p in PROJECTS
-        ),
-
-        "planned": sum(
-            p["status"] == "Planned"
-            for p in PROJECTS
-        ),
-
-        "research": sum(
-            p["status"] == "Research"
-            for p in PROJECTS
-        )
-    }
-
     return render_template(
         "projects.html",
-        projects=PROJECTS,
-        stats=stats
+        projects=PROJECTS
     )
 
 
