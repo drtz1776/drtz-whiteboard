@@ -1,0 +1,208 @@
+
+{
+  "topics": [
+    {
+      "id": "networking",
+      "name": "Networking",
+      "description": "Design and manage networking, connectivity, routing, and traffic distribution on AWS.",
+      "icon": "network",
+      "categories": [
+        {
+          "id": "vpc-fundamentals",
+          "name": "VPC Fundamentals",
+          "description": "VPC architecture, network isolation, CIDR blocks, and core networking concepts."
+        },
+        {
+          "id": "subnets-routing",
+          "name": "Subnets & Routing",
+          "description": "Public and private subnets, route tables, internet gateways, NAT gateways, and network ACLs."
+        },
+        {
+          "id": "vpc-endpoints",
+          "name": "VPC Endpoints",
+          "description": "Gateway endpoints, interface endpoints, AWS PrivateLink, and private access to AWS services."
+        },
+        {
+          "id": "hybrid-connectivity",
+          "name": "Hybrid Connectivity",
+          "description": "AWS Direct Connect, Site-to-Site VPN, Transit Gateway, and hybrid networking architectures."
+        },
+        {
+          "id": "load-balancing",
+          "name": "Load Balancing",
+          "description": "Application Load Balancers, Network Load Balancers, target groups, and traffic routing."
+        },
+        {
+          "id": "dns-global-networking",
+          "name": "DNS & Global Networking",
+          "description": "Amazon Route 53, DNS resolution, CloudFront, Global Accelerator, and global traffic optimization."
+        }
+      ]
+    },
+    {
+      "id": "storage",
+      "name": "Storage",
+      "description": "Choose and configure AWS object, block, and file storage solutions.",
+      "icon": "hard-drive",
+      "categories": [
+        {
+          "id": "amazon-s3",
+          "name": "Amazon S3",
+          "description": "Object storage, buckets, permissions, versioning, and performance."
+        },
+        {
+          "id": "s3-storage-classes",
+          "name": "S3 Storage Classes & Lifecycle",
+          "description": "Storage classes, lifecycle policies, archival strategies, and cost optimization."
+        },
+        {
+          "id": "ebs-instance-store",
+          "name": "EBS & Instance Store",
+          "description": "Block storage, EBS volume types, snapshots, performance, and ephemeral storage."
+        },
+        {
+          "id": "efs-fsx",
+          "name": "EFS & FSx",
+          "description": "Managed file storage, NFS, SMB, shared file systems, and performance."
+        },
+        {
+          "id": "storage-migration",
+          "name": "Storage Gateway & Data Transfer",
+          "description": "AWS Storage Gateway, DataSync, Snow Family, and data migration."
+        }
+      ]
+    },
+    {
+      "id": "compute",
+      "name": "Compute",
+      "description": "Design scalable computing solutions using EC2, Lambda, containers, and managed services.",
+      "icon": "server",
+      "categories": [
+        {
+          "id": "ec2-pricing",
+          "name": "EC2 & Pricing",
+          "description": "EC2 instance types, purchasing options, dedicated hosts, Spot Instances, and Savings Plans."
+        },
+        {
+          "id": "auto-scaling",
+          "name": "Auto Scaling",
+          "description": "Auto Scaling groups, scaling policies, instance health checks, and capacity management."
+        },
+        {
+          "id": "lambda-serverless",
+          "name": "Lambda & Serverless",
+          "description": "AWS Lambda, event-driven computing, concurrency, and serverless applications."
+        },
+        {
+          "id": "containers",
+          "name": "Containers: ECS, EKS & Fargate",
+          "description": "Container orchestration, managed container services, Kubernetes, and serverless containers."
+        },
+        {
+          "id": "deployment-monitoring",
+          "name": "Deployment & Monitoring",
+          "description": "CloudFormation, Elastic Beanstalk, CloudWatch, Systems Manager, and deployment strategies."
+        }
+      ]
+    },
+    {
+      "id": "databases",
+      "name": "Databases",
+      "description": "Select and optimize relational, NoSQL, analytical, and in-memory databases.",
+      "icon": "database",
+      "categories": [
+        {
+          "id": "rds-aurora",
+          "name": "RDS & Aurora",
+          "description": "Managed relational databases, Multi-AZ, read replicas, backups, and Aurora Global Database."
+        },
+        {
+          "id": "dynamodb",
+          "name": "DynamoDB",
+          "description": "NoSQL databases, capacity modes, DynamoDB Streams, and scalability."
+        },
+        {
+          "id": "caching",
+          "name": "Caching: ElastiCache & DAX",
+          "description": "In-memory caching, ElastiCache, DynamoDB Accelerator, and database performance."
+        },
+        {
+          "id": "analytics-databases",
+          "name": "Analytics: Redshift & Athena",
+          "description": "Data warehousing, SQL analytics, Redshift, Athena, and analytics architectures."
+        },
+        {
+          "id": "database-migration",
+          "name": "Migration & Replication",
+          "description": "AWS Database Migration Service, Schema Conversion Tool, and database replication."
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Security",
+      "description": "Protect AWS workloads using identity management, encryption, network controls, and governance.",
+      "icon": "shield",
+      "categories": [
+        {
+          "id": "iam-policies",
+          "name": "IAM & Access Policies",
+          "description": "IAM users, roles, permission policies, resource policies, and permission boundaries."
+        },
+        {
+          "id": "organizations-scps",
+          "name": "Organizations & SCPs",
+          "description": "AWS Organizations, service control policies, organizational units, and governance."
+        },
+        {
+          "id": "encryption-kms",
+          "name": "Encryption & KMS",
+          "description": "AWS KMS, encryption at rest, encryption in transit, and key management."
+        },
+        {
+          "id": "network-security",
+          "name": "Network & Application Security",
+          "description": "Security groups, network ACLs, AWS WAF, Shield, and network protection."
+        },
+        {
+          "id": "audit-compliance",
+          "name": "Audit & Compliance",
+          "description": "CloudTrail, AWS Config, GuardDuty, monitoring, and compliance controls."
+        }
+      ]
+    },
+    {
+      "id": "architecture",
+      "name": "Architecture",
+      "description": "Apply AWS architectural principles to build resilient, efficient, and scalable systems.",
+      "icon": "blocks",
+      "categories": [
+        {
+          "id": "high-availability",
+          "name": "High Availability",
+          "description": "Availability Zones, fault tolerance, redundancy, failover, and resilient applications."
+        },
+        {
+          "id": "disaster-recovery",
+          "name": "Disaster Recovery",
+          "description": "RPO, RTO, backups, pilot light, warm standby, and multi-Region recovery."
+        },
+        {
+          "id": "decoupling-messaging",
+          "name": "Decoupling & Messaging",
+          "description": "Amazon SQS, SNS, EventBridge, Kinesis, and asynchronous processing."
+        },
+        {
+          "id": "cost-optimization",
+          "name": "Cost Optimization",
+          "description": "AWS pricing, purchasing strategies, resource optimization, and cost-efficient architectures."
+        },
+        {
+          "id": "performance-scalability",
+          "name": "Performance & Scalability",
+          "description": "Caching, horizontal scaling, low-latency architectures, and workload optimization."
+        }
+      ]
+    }
+  ]
+}

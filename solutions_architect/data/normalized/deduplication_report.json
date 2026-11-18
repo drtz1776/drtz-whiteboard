@@ -1,0 +1,1250 @@
+{
+  "total_input_records": 316,
+  "total_unique_questions": 259,
+  "duplicate_records_removed": 57,
+  "duplicate_question_groups": 56,
+  "answer_conflict_groups": 13,
+  "duplicates": [
+    {
+      "question_id": "q_8b3131bc5ad1ced8",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 1.json",
+          "position": 3
+        },
+        {
+          "file": "SAA set 1.json",
+          "position": 30
+        }
+      ]
+    },
+    {
+      "question_id": "q_2f4e9cb695459e43",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 1.json",
+          "position": 4
+        },
+        {
+          "file": "SAA set 1.json",
+          "position": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_b20621068cc4762b",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 1.json",
+          "position": 6
+        },
+        {
+          "file": "SAA set 1.json",
+          "position": 16
+        }
+      ]
+    },
+    {
+      "question_id": "q_56268c50bb1cbb34",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 1.json",
+          "position": 9
+        },
+        {
+          "file": "SAA set 1.json",
+          "position": 27
+        }
+      ]
+    },
+    {
+      "question_id": "q_aa16f95d648a3377",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 1.json",
+          "position": 15
+        },
+        {
+          "file": "SAA set 1.json",
+          "position": 13
+        }
+      ]
+    },
+    {
+      "question_id": "q_baacce41af36f7af",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 1.json",
+          "position": 18
+        },
+        {
+          "file": "SAA set 1.json",
+          "position": 10
+        }
+      ]
+    },
+    {
+      "question_id": "q_711aa4b817a118e1",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 1.json",
+          "position": 19
+        },
+        {
+          "file": "SAA set 1.json",
+          "position": 19
+        }
+      ]
+    },
+    {
+      "question_id": "q_146942e146d882b2",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 1.json",
+          "position": 20
+        },
+        {
+          "file": "SAA set 1.json",
+          "position": 24
+        }
+      ]
+    },
+    {
+      "question_id": "q_d6164b63cf090f14",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 1.json",
+          "position": 21
+        },
+        {
+          "file": "SAA set 1.json",
+          "position": 6
+        }
+      ]
+    },
+    {
+      "question_id": "q_8ae4804e4e96822c",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 1.json",
+          "position": 22
+        },
+        {
+          "file": "SAA set 1.json",
+          "position": 9
+        }
+      ]
+    },
+    {
+      "question_id": "q_b5a0136942dcea71",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 1.json",
+          "position": 24
+        },
+        {
+          "file": "SAA set 1.json",
+          "position": 29
+        }
+      ]
+    },
+    {
+      "question_id": "q_6a13aa550ea2657d",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 1.json",
+          "position": 25
+        },
+        {
+          "file": "SAA set 1.json",
+          "position": 25
+        }
+      ]
+    },
+    {
+      "question_id": "q_8379621318e248b2",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 1.json",
+          "position": 27
+        },
+        {
+          "file": "SAA set 1.json",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_d59dae8fa0af301c",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 1.json",
+          "position": 30
+        },
+        {
+          "file": "SAA set 1.json",
+          "position": 5
+        }
+      ]
+    },
+    {
+      "question_id": "q_843fc28f1e3fc612",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 2.json",
+          "position": 5
+        },
+        {
+          "file": "SAA set 1.json",
+          "position": 21
+        }
+      ]
+    },
+    {
+      "question_id": "q_129d97ae300c4684",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 2.json",
+          "position": 9
+        },
+        {
+          "file": "SAA Set 2.json",
+          "position": 16
+        }
+      ]
+    },
+    {
+      "question_id": "q_19084a36fc855ab3",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 2.json",
+          "position": 10
+        },
+        {
+          "file": "SAA Set 2.json",
+          "position": 14
+        }
+      ]
+    },
+    {
+      "question_id": "q_595a01039a6d2ae2",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 2.json",
+          "position": 12
+        },
+        {
+          "file": "SAA Set 2.json",
+          "position": 21
+        }
+      ]
+    },
+    {
+      "question_id": "q_ef9f64b0ad714d37",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 2.json",
+          "position": 14
+        },
+        {
+          "file": "SAA Set 2.json",
+          "position": 28
+        }
+      ]
+    },
+    {
+      "question_id": "q_a88b654d72d08872",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 2.json",
+          "position": 20
+        },
+        {
+          "file": "SAA Set 2.json",
+          "position": 5
+        }
+      ]
+    },
+    {
+      "question_id": "q_b107da118e20e817",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 2.json",
+          "position": 21
+        },
+        {
+          "file": "SAA Set 2.json",
+          "position": 7
+        }
+      ]
+    },
+    {
+      "question_id": "q_1894eba881e34c13",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 2.json",
+          "position": 23
+        },
+        {
+          "file": "SAA Set 2.json",
+          "position": 10
+        }
+      ]
+    },
+    {
+      "question_id": "q_bbfd23890f034602",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 2.json",
+          "position": 24
+        },
+        {
+          "file": "SAA Set 2.json",
+          "position": 27
+        }
+      ]
+    },
+    {
+      "question_id": "q_9df64ebd5e3f7422",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 2.json",
+          "position": 25
+        },
+        {
+          "file": "SAA Set 2.json",
+          "position": 30
+        }
+      ]
+    },
+    {
+      "question_id": "q_7c41d3eba6bfbf6a",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 2.json",
+          "position": 26
+        },
+        {
+          "file": "SAA Set 2.json",
+          "position": 20
+        }
+      ]
+    },
+    {
+      "question_id": "q_92db743939e487a9",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 2.json",
+          "position": 27
+        },
+        {
+          "file": "SAA Set 2.json",
+          "position": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_4013102f805809e5",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 2.json",
+          "position": 29
+        },
+        {
+          "file": "SAA Set 2.json",
+          "position": 26
+        }
+      ]
+    },
+    {
+      "question_id": "q_e6e506f547e338cd",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 2.json",
+          "position": 32
+        },
+        {
+          "file": "SAA Set 2.json",
+          "position": 25
+        }
+      ]
+    },
+    {
+      "question_id": "q_f1f15e4eed4d24ff",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 2.json",
+          "position": 33
+        },
+        {
+          "file": "SAA Set 2.json",
+          "position": 6
+        }
+      ]
+    },
+    {
+      "question_id": "q_fed53ebf9c67dc5e",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 1
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 5
+        }
+      ]
+    },
+    {
+      "question_id": "q_c6b1b9f19f96c6d4",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 2
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 7
+        }
+      ]
+    },
+    {
+      "question_id": "q_e4a9f6b4b54ef6a5",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 3
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 16
+        }
+      ]
+    },
+    {
+      "question_id": "q_a95cef1c180ba77f",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 4
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_43c2e2cc7fe7beca",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 5
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 18
+        }
+      ]
+    },
+    {
+      "question_id": "q_08557f806c991fab",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 8
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 20
+        }
+      ]
+    },
+    {
+      "question_id": "q_dc028c74e6bf441e",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 9
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 25
+        }
+      ]
+    },
+    {
+      "question_id": "q_4c89e4fb78c6638f",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 12
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 27
+        }
+      ]
+    },
+    {
+      "question_id": "q_06bc5322c40bcce2",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 14
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_973581b2b4a8ca83",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 15
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 12
+        }
+      ]
+    },
+    {
+      "question_id": "q_02699e17fd995f0a",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 18
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 15
+        }
+      ]
+    },
+    {
+      "question_id": "q_9d7ce422428f78a6",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 22
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 19
+        }
+      ]
+    },
+    {
+      "question_id": "q_323e7296b2a8748b",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 25
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 2
+        }
+      ]
+    },
+    {
+      "question_id": "q_0585c633e80f142d",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 26
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 26
+        }
+      ]
+    },
+    {
+      "question_id": "q_cdbb4d5d23369f9d",
+      "occurrences": 3,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 28
+        },
+        {
+          "file": "SAA Set 2.json",
+          "position": 17
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 23
+        }
+      ]
+    },
+    {
+      "question_id": "q_cd37713da92644bb",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 29
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 29
+        }
+      ]
+    },
+    {
+      "question_id": "q_09f8d23fd9a400fd",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 30
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 32
+        }
+      ]
+    },
+    {
+      "question_id": "q_1c6f896e548d16f1",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 31
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 33
+        }
+      ]
+    },
+    {
+      "question_id": "q_0209e4d0c2170030",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 33
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 30
+        }
+      ]
+    },
+    {
+      "question_id": "q_97c8cf0ed3aaae14",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 34
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 28
+        }
+      ]
+    },
+    {
+      "question_id": "q_de7f366ebde0ba00",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 35
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_33adb484358c99a6",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 38
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 17
+        }
+      ]
+    },
+    {
+      "question_id": "q_22c43a17cbb1fe1f",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 39
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 14
+        }
+      ]
+    },
+    {
+      "question_id": "q_acd2b3d8bbc65e45",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 3.json",
+          "position": 42
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 31
+        }
+      ]
+    },
+    {
+      "question_id": "q_59740ede22395c2a",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 6.json",
+          "position": 8
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 21
+        }
+      ]
+    },
+    {
+      "question_id": "q_288cd14139fc0e9b",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 6.json",
+          "position": 32
+        },
+        {
+          "file": "SAA Set 2.json",
+          "position": 29
+        }
+      ]
+    },
+    {
+      "question_id": "q_409ce733ebaf73de",
+      "occurrences": 2,
+      "sources": [
+        {
+          "file": "Paper 6.json",
+          "position": 33
+        },
+        {
+          "file": "SAA Set 3.json",
+          "position": 22
+        }
+      ]
+    }
+  ],
+  "answer_conflicts": [
+    {
+      "question_id": "q_8379621318e248b2",
+      "question": "The solo founder at a tech startup has just created a brand new AWS account. The founder has provisioned an Amazon EC2 instance 1A which is running in AWS Region A. Later, he takes a snapshot of the instance 1A and then creates a new Amazon Machine Image (AMI) in Region A from this snapshot. This AMI is then copied into another Region B. The founder provisions an instance 1B in Region B using this new AMI in Region B.\n\nAt this point in time, what entities exist in Region B?",
+      "answer_variants": [
+        {
+          "normalized_answer": "1 amazon ec2 instance, 1 ami and 1 snapshot exist in region b",
+          "occurrences": [
+            {
+              "answer": "1 Amazon EC2 instance, 1 AMI and 1 snapshot exist in Region B",
+              "sources": [
+                {
+                  "file": "Paper 1.json",
+                  "position": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "normalized_answer": "1 amazon ec2 instance, 1 ami and 1 snapshot exist in region",
+          "occurrences": [
+            {
+              "answer": "1 Amazon EC2 instance, 1 AMI and 1 snapshot exist in Region",
+              "sources": [
+                {
+                  "file": "SAA set 1.json",
+                  "position": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "q_d59dae8fa0af301c",
+      "question": "The IT department at a consulting firm is conducting a training workshop for new developers. As part of an evaluation exercise on Amazon S3, the new developers were asked to identify the invalid storage class lifecycle transitions for objects stored on Amazon S3.\n\nCan you spot the INVALID lifecycle transitions from the options below? (Select two)",
+      "answer_variants": [
+        {
+          "normalized_answer": "1) amazon s3 one zone-ia => amazon s3 standard-ia 2) amazon s3 intelligent-tiering => amazon s3 standard",
+          "occurrences": [
+            {
+              "answer": "1) Amazon S3 One Zone-IA => Amazon S3 Standard-IA\n2) Amazon S3 Intelligent-Tiering => Amazon S3 Standard",
+              "sources": [
+                {
+                  "file": "Paper 1.json",
+                  "position": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "normalized_answer": "1. amazon s3 one zone-ia => amazon s3 standard-ia 2. amazon s3 intelligent-tiering => amazon s3 standard",
+          "occurrences": [
+            {
+              "answer": "1. Amazon S3 One Zone-IA => Amazon S3 Standard-IA\n\n2. Amazon S3 Intelligent-Tiering => Amazon S3 Standard",
+              "sources": [
+                {
+                  "file": "SAA set 1.json",
+                  "position": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "q_129d97ae300c4684",
+      "question": "A big data consulting firm needs to set up a data lake on Amazon S3 for a Health-Care client. The data lake is split in raw and refined zones. For compliance reasons, the source data needs to be kept for a minimum of 5 years. The source data arrives in the raw zone and is then processed via an AWS Glue based extract, transform, and load (ETL) job into the refined zone. The business analysts run ad-hoc queries only on the data in the refined zone using Amazon Athena. The team is concerned about the cost of data storage in both the raw and refined zones as the data is increasing at a rate of 1 terabyte daily in each zone.\n\nAs a solutions architect, which of the following would you recommend as the MOST cost-optimal solution? (Select two)",
+      "answer_variants": [
+        {
+          "normalized_answer": "1) use aws glue etl job to write the transformed data in the refined zone using a compressed file format 2) setup a lifecycle policy to transition the raw zone data into amazon s3 glacier deep archive after 1 day of object creation",
+          "occurrences": [
+            {
+              "answer": "1) Use AWS Glue ETL job to write the transformed data in the refined zone using a compressed file format\n2) Setup a lifecycle policy to transition the raw zone data into Amazon S3 Glacier Deep Archive after 1 day of object creation",
+              "sources": [
+                {
+                  "file": "Paper 2.json",
+                  "position": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "normalized_answer": "1. setup a lifecycle policy to transition the raw zone data into amazon s3 glacier deep archive after 1 day of object creation 2. use aws glue etl job to write the transformed data in the refined zone using a compressed file format",
+          "occurrences": [
+            {
+              "answer": "1. Setup a lifecycle policy to transition the raw zone data into Amazon S3 Glacier Deep Archive after 1 day of object creation\n\n2. Use AWS Glue ETL job to write the transformed data in the refined zone using a compressed file format",
+              "sources": [
+                {
+                  "file": "SAA Set 2.json",
+                  "position": 16
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "q_7c41d3eba6bfbf6a",
+      "question": "An HTTP application is deployed on an Auto Scaling Group, is accessible from an Application Load Balancer (ALB) that provides HTTPS termination, and accesses a PostgreSQL database managed by Amazon RDS.\n\nHow should you configure the security groups? (Select three)",
+      "answer_variants": [
+        {
+          "normalized_answer": "1. the security group of amazon rds should have an inbound rule from the security group of the amazon ec2 instances in the auto scaling group on port 5432 2. the security group of the amazon ec2 instances should have an inbound rule from the security group of the application load balancer on port 80 3. the security group of the application load balancer should have an inbound rule from anywhere on port 443",
+          "occurrences": [
+            {
+              "answer": "1. The security group of Amazon RDS should have an inbound rule from the security group of the Amazon EC2 instances in the Auto Scaling group on port 5432\n2. The security group of the Amazon EC2 instances should have an inbound rule from the security group of the Application Load Balancer on port 80\n3. The security group of the Application Load Balancer should have an inbound rule from anywhere on port 443",
+              "sources": [
+                {
+                  "file": "Paper 2.json",
+                  "position": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "normalized_answer": "1. the security group of amazon rds should have an inbound rule from the security group of the amazon ec2 instances in the auto scaling group on port 5432 2. the security group of the application load balancer should have an inbound rule from anywhere on port 443 3. the security group of the amazon ec2 instances should have an inbound rule from the security group of the application load balancer on port 80",
+          "occurrences": [
+            {
+              "answer": "1. The security group of Amazon RDS should have an inbound rule from the security group of the Amazon EC2 instances in the Auto Scaling group on port 5432\n\n2. The security group of the Application Load Balancer should have an inbound rule from anywhere on port 443\n\n3. The security group of the Amazon EC2 instances should have an inbound rule from the security group of the Application Load Balancer on port 80",
+              "sources": [
+                {
+                  "file": "SAA Set 2.json",
+                  "position": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "q_4013102f805809e5",
+      "question": "A silicon valley based startup has a two-tier architecture using Amazon EC2 instances for its flagship application. The web servers (listening on port 443), which have been assigned security group A, are in public subnets across two Availability Zones (AZs) and the MSSQL based database instances (listening on port 1433), which have been assigned security group B, are in two private subnets across two Availability Zones (AZs). The DevOps team wants to review the security configurations of the application architecture.\n\nAs a solutions architect, which of the following options would you select as the MOST secure configuration? (Select two)",
+      "answer_variants": [
+        {
+          "normalized_answer": "1) for security group b: add an inbound rule that allows traffic only from security group a on port 1433 2) for security group a: add an inbound rule that allows traffic from all sources on port 443. add an outbound rule with the destination as security group b on port 1433",
+          "occurrences": [
+            {
+              "answer": "1) For security group B: Add an inbound rule that allows traffic only from security group A on port 1433\n\n2) For security group A: Add an inbound rule that allows traffic from all sources on port 443. Add an outbound rule with the destination as security group B on port 1433",
+              "sources": [
+                {
+                  "file": "Paper 2.json",
+                  "position": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "normalized_answer": "1. for security group b: add an inbound rule that allows traffic only from security group a on port 1433 2. for security group a: add an inbound rule that allows traffic from all sources on port 443. add an outbound rule with the destination as security group b on port 1433",
+          "occurrences": [
+            {
+              "answer": "1. For security group B: Add an inbound rule that allows traffic only from security group A on port 1433\n\n2. For security group A: Add an inbound rule that allows traffic from all sources on port 443. Add an outbound rule with the destination as security group B on port 1433",
+              "sources": [
+                {
+                  "file": "SAA Set 2.json",
+                  "position": 26
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "q_f1f15e4eed4d24ff",
+      "question": "The engineering team at a logistics company has noticed that the Auto Scaling group (ASG) is not terminating an unhealthy Amazon EC2 instance.\n\nAs a Solutions Architect, which of the following options would you suggest to troubleshoot the issue? (Select three)",
+      "answer_variants": [
+        {
+          "normalized_answer": "1) the instance has failed the elastic load balancing (elb) health check status 2) the health check grace period for the instance has not expired 3) the instance maybe in impaired status",
+          "occurrences": [
+            {
+              "answer": "1) The instance has failed the Elastic Load Balancing (ELB) health check status\n\n2) The health check grace period for the instance has not expired\n\n3) The instance maybe in Impaired status",
+              "sources": [
+                {
+                  "file": "Paper 2.json",
+                  "position": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "normalized_answer": "1. the instance has failed the elastic load balancing (elb) health check status 2. the health check grace period for the instance has not expired 3. the instance maybe in impaired status",
+          "occurrences": [
+            {
+              "answer": "1. The instance has failed the Elastic Load Balancing (ELB) health check status\n\n2. The health check grace period for the instance has not expired\n\n3. The instance maybe in Impaired status",
+              "sources": [
+                {
+                  "file": "SAA Set 2.json",
+                  "position": 6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "q_dc028c74e6bf441e",
+      "question": "The DevOps team at a multi-national company is helping its subsidiaries standardize Amazon EC2 instances by using the same Amazon Machine Image (AMI). Some of these subsidiaries are in the same AWS region but use different AWS accounts whereas others are in different AWS regions but use the same AWS account as the parent company. The DevOps team has hired you as a solutions architect for this project.\n\nWhich of the following would you identify as CORRECT regarding the capabilities of an Amazon Machine Image (AMI)? (Select three)",
+      "answer_variants": [
+        {
+          "normalized_answer": "1) copying an amazon machine image (ami) backed by an encrypted snapshot cannot result in an unencrypted target snapshot 2) you can share an amazon machine image (ami) with another aws account 3) you can copy an amazon machine image (ami) across aws regions",
+          "occurrences": [
+            {
+              "answer": "1) \nCopying an Amazon Machine Image (AMI) backed by an encrypted snapshot cannot result in an unencrypted target snapshot\n\n2) You can share an Amazon Machine Image (AMI) with another AWS account\n\n3) You can copy an Amazon Machine Image (AMI) across AWS Regions",
+              "sources": [
+                {
+                  "file": "Paper 3.json",
+                  "position": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "normalized_answer": "1. you can copy an amazon machine image (ami) across aws regions 2. you can share an amazon machine image (ami) with another aws account 3. copying an amazon machine image (ami) backed by an encrypted snapshot cannot result in an unencrypted target snapshot",
+          "occurrences": [
+            {
+              "answer": "1. You can copy an Amazon Machine Image (AMI) across AWS Regions\n\n2. You can share an Amazon Machine Image (AMI) with another AWS account\n\n3. Copying an Amazon Machine Image (AMI) backed by an encrypted snapshot cannot result in an unencrypted target snapshot",
+              "sources": [
+                {
+                  "file": "SAA Set 3.json",
+                  "position": 25
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "q_06bc5322c40bcce2",
+      "question": "A retail company has connected its on-premises data center to the AWS Cloud via AWS Direct Connect. The company wants to be able to resolve Domain Name System (DNS) queries for any resources in the on-premises network from the AWS VPC and also resolve any DNS queries for resources in the AWS VPC from the on-premises network.\n\nAs a solutions architect, which of the following solutions can be combined to address the given use case? (Select two)",
+      "answer_variants": [
+        {
+          "normalized_answer": "1) create an inbound endpoint on amazon route 53 resolver and then dns resolvers on the on-premises network can forward dns queries to amazon route 53 resolver via this endpoint 2) create an outbound endpoint on amazon route 53 resolver and then amazon route 53 resolver can conditionally forward queries to resolvers on the on-premises network via this endpoint",
+          "occurrences": [
+            {
+              "answer": "1) Create an inbound endpoint on Amazon Route 53 Resolver and then DNS resolvers on the on-premises network can forward DNS queries to Amazon Route 53 Resolver via this endpoint\n\n2) Create an outbound endpoint on Amazon Route 53 Resolver and then Amazon Route 53 Resolver can conditionally forward queries to resolvers on the on-premises network via this endpoint",
+              "sources": [
+                {
+                  "file": "Paper 3.json",
+                  "position": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "normalized_answer": "1. create an outbound endpoint on amazon route 53 resolver and then amazon route 53 resolver can conditionally forward queries to resolvers on the on-premises network via this endpoint 2. create an inbound endpoint on amazon route 53 resolver and then dns resolvers on the on-premises network can forward dns queries to amazon route 53 resolver via this endpoint",
+          "occurrences": [
+            {
+              "answer": "1. Create an outbound endpoint on Amazon Route 53 Resolver and then Amazon Route 53 Resolver can conditionally forward queries to resolvers on the on-premises network via this endpoint\n\n2. Create an inbound endpoint on Amazon Route 53 Resolver and then DNS resolvers on the on-premises network can forward DNS queries to Amazon Route 53 Resolver via this endpoint",
+              "sources": [
+                {
+                  "file": "SAA Set 3.json",
+                  "position": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "q_02699e17fd995f0a",
+      "question": "A company wants to improve its gaming application by adding a leaderboard that uses a complex proprietary algorithm based on the participating user's performance metrics to identify the top users on a real-time basis. The technical requirements mandate high elasticity, low latency, and real-time processing to deliver customizable user data for the community of users. The leaderboard would be accessed by millions of users simultaneously.\n\nWhich of the following options support the case for using Amazon ElastiCache to meet the given requirements? (Select two)",
+      "answer_variants": [
+        {
+          "normalized_answer": "1) use amazon elasticache to improve latency and throughput for read-heavy application workloads 2) use amazon elasticache to improve the performance of compute-intensive workloads",
+          "occurrences": [
+            {
+              "answer": "1) Use Amazon ElastiCache to improve latency and throughput for read-heavy application workloads\n\n2) Use Amazon ElastiCache to improve the performance of compute-intensive workloads",
+              "sources": [
+                {
+                  "file": "Paper 3.json",
+                  "position": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "normalized_answer": "1. use amazon elasticache to improve the performance of compute-intensive workloads 2. use amazon elasticache to improve latency and throughput for read-heavy application workloads",
+          "occurrences": [
+            {
+              "answer": "1. Use Amazon ElastiCache to improve the performance of compute-intensive workloads\n\n2. Use Amazon ElastiCache to improve latency and throughput for read-heavy application workloads",
+              "sources": [
+                {
+                  "file": "SAA Set 3.json",
+                  "position": 15
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "q_323e7296b2a8748b",
+      "question": "The engineering team at a social media company wants to use Amazon CloudWatch alarms to automatically recover Amazon EC2 instances if they become impaired. The team has hired you as a solutions architect to provide subject matter expertise.\n\nAs a solutions architect, which of the following statements would you identify as CORRECT regarding this automatic recovery process? (Select two)",
+      "answer_variants": [
+        {
+          "normalized_answer": "1) a recovered instance is identical to the original instance, including the instance id, private ip addresses, elastic ip addresses, and all instance metadata 2) if your instance has a public ipv4 address, it retains the public ipv4 address after recovery",
+          "occurrences": [
+            {
+              "answer": "1) A recovered instance is identical to the original instance, including the instance ID, private IP addresses, Elastic IP addresses, and all instance metadata\n\n2) If your instance has a public IPv4 address, it retains the public IPv4 address after recovery",
+              "sources": [
+                {
+                  "file": "Paper 3.json",
+                  "position": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "normalized_answer": "1. a recovered instance is identical to the original instance, including the instance id, private ip addresses, elastic ip addresses, and all instance metadata 2. if your instance has a public ipv4 address, it retains the public ipv4 address after recovery",
+          "occurrences": [
+            {
+              "answer": "1. A recovered instance is identical to the original instance, including the instance ID, private IP addresses, Elastic IP addresses, and all instance metadata\n\n2. If your instance has a public IPv4 address, it retains the public IPv4 address after recovery",
+              "sources": [
+                {
+                  "file": "SAA Set 3.json",
+                  "position": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "q_0585c633e80f142d",
+      "question": "The DevOps team at an IT company is provisioning a two-tier application in a VPC with a public subnet and a private subnet. The team wants to use either a Network Address Translation (NAT) instance or a Network Address Translation (NAT) gateway in the public subnet to enable instances in the private subnet to initiate outbound IPv4 traffic to the internet but needs some technical assistance in terms of the configuration options available for the Network Address Translation (NAT) instance and the Network Address Translation (NAT) gateway.\n\nAs a solutions architect, which of the following options would you identify as CORRECT? (Select three)",
+      "answer_variants": [
+        {
+          "normalized_answer": "1) nat instance can be used as a bastion server 2) nat instance supports port forwarding 3) security groups can be associated with a nat instance",
+          "occurrences": [
+            {
+              "answer": "1) NAT instance can be used as a bastion server\n\n2) NAT instance supports port forwarding\n\n3) Security Groups can be associated with a NAT instance",
+              "sources": [
+                {
+                  "file": "Paper 3.json",
+                  "position": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "normalized_answer": "1. nat instance can be used as a bastion server 2. security groups can be associated with a nat instance 3. nat instance supports port forwarding",
+          "occurrences": [
+            {
+              "answer": "1. NAT instance can be used as a bastion server\n\n2. Security Groups can be associated with a NAT instance\n\n3. NAT instance supports port forwarding",
+              "sources": [
+                {
+                  "file": "SAA Set 3.json",
+                  "position": 26
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "q_cdbb4d5d23369f9d",
+      "question": "A developer has configured inbound traffic for the relevant ports in both the Security Group of the Amazon EC2 instance as well as the Network Access Control List (Network ACL) of the subnet for the Amazon EC2 instance. The developer is, however, unable to connect to the service running on the Amazon EC2 instance.\n\nAs a solutions architect, how will you fix this issue?",
+      "answer_variants": [
+        {
+          "normalized_answer": "security groups are stateful, so allowing inbound traffic to the necessary ports enables the connection. network acls are stateless, so you must allow both inbound and outbound traffic",
+          "occurrences": [
+            {
+              "answer": "Security Groups are stateful, so allowing inbound traffic to the necessary ports enables the connection. Network ACLs are stateless, so you must allow both inbound and outbound traffic",
+              "sources": [
+                {
+                  "file": "Paper 3.json",
+                  "position": 28
+                }
+              ]
+            },
+            {
+              "answer": "Security Groups are stateful, so allowing inbound traffic to the necessary ports enables the connection. Network ACLs are stateless, so you must allow both inbound and outbound traffic",
+              "sources": [
+                {
+                  "file": "SAA Set 3.json",
+                  "position": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "normalized_answer": "security groups are stateful, so allowing inbound traffic to the necessary ports enables the connection. network access control list (network acl) are stateless, so you must allow both inbound and outbound traffic",
+          "occurrences": [
+            {
+              "answer": "Security Groups are stateful, so allowing inbound traffic to the necessary ports enables the connection. Network access control list (network ACL) are stateless, so you must allow both inbound and outbound traffic",
+              "sources": [
+                {
+                  "file": "SAA Set 2.json",
+                  "position": 17
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "q_33adb484358c99a6",
+      "question": "An AWS Organization is using Service Control Policies (SCPs) for central control over the maximum available permissions for all accounts in their organization. This allows the organization to ensure that all accounts stay within the organization's access control guidelines.\n\nWhich of the given scenarios are correct regarding the permissions described below? (Select three)",
+      "answer_variants": [
+        {
+          "normalized_answer": "1) service control policy (scp) does not affect service-linked role 2) service control policy (scp) affects all users and roles in the member accounts, including root user of the member accounts 3) if a user or role has an iam permission policy that grants access to an action that is either not allowed or explicitly denied by the applicable service control policy (scp), the user or role can't perform that action",
+          "occurrences": [
+            {
+              "answer": "1) Service control policy (SCP) does not affect service-linked role\n\n2) Service control policy (SCP) affects all users and roles in the member accounts, including root user of the member accounts\n\n3) If a user or role has an IAM permission policy that grants access to an action that is either not allowed or explicitly denied by the applicable service control policy (SCP), the user or role can't perform that action",
+              "sources": [
+                {
+                  "file": "Paper 3.json",
+                  "position": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "normalized_answer": "1. service control policy (scp) does not affect service-linked role 2. service control policy (scp) affects all users and roles in the member accounts, including root user of the member accounts 3. if a user or role has an iam permission policy that grants access to an action that is either not allowed or explicitly denied by the applicable service control policy (scp), the user or role can't perform that action",
+          "occurrences": [
+            {
+              "answer": "1. Service control policy (SCP) does not affect service-linked role\n\n2. Service control policy (SCP) affects all users and roles in the member accounts, including root user of the member accounts\n\n3. If a user or role has an IAM permission policy that grants access to an action that is either not allowed or explicitly denied by the applicable service control policy (SCP), the user or role can't perform that action",
+              "sources": [
+                {
+                  "file": "SAA Set 3.json",
+                  "position": 17
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
