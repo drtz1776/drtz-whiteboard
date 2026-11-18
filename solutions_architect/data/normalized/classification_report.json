@@ -1,0 +1,4214 @@
+{
+  "total_questions": 259,
+  "status_counts": {
+    "classified": 180,
+    "ambiguous": 58,
+    "unclassified": 21
+  },
+  "topic_counts": {
+    "Databases": 39,
+    "Networking": 42,
+    "Storage": 42,
+    "Compute": 20,
+    "Security": 20,
+    "Architecture": 17
+  },
+  "needs_review": [
+    {
+      "question_id": "q_d629a3876c72dbb0",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "load-balancing",
+          "score": 2
+        },
+        {
+          "category_id": "auto-scaling",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_5ac6ecbfd5b8e2ab",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_227e910a9e57f014",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "load-balancing",
+          "score": 6
+        },
+        {
+          "category_id": "vpc-endpoints",
+          "score": 6
+        },
+        {
+          "category_id": "rds-aurora",
+          "score": 4
+        },
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_a7ee9848349ff99d",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_564eb49917c20778",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_af43d03a1ca16b0f",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_baacce41af36f7af",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_b5a0136942dcea71",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 3
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 3
+        },
+        {
+          "category_id": "high-availability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_8379621318e248b2",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_aeb60dabd33a761f",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_fdc845c80d952030",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_b9b13a25970974f9",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_be010decc1bcade7",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 4
+        },
+        {
+          "category_id": "analytics-databases",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_b64f2ec6789a0155",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_818169582a150326",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_17710c7ad98c5583",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 3
+        },
+        {
+          "category_id": "iam-policies",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_bbfd23890f034602",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 3
+        },
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 3
+        },
+        {
+          "category_id": "storage-migration",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_9e540e9a3074f094",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_e6e506f547e338cd",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_fed53ebf9c67dc5e",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 4
+        },
+        {
+          "category_id": "containers",
+          "score": 4
+        },
+        {
+          "category_id": "deployment-monitoring",
+          "score": 1
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 1
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_43c2e2cc7fe7beca",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "load-balancing",
+          "score": 2
+        },
+        {
+          "category_id": "subnets-routing",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_f984761f7e95688f",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 4
+        },
+        {
+          "category_id": "encryption-kms",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_dc028c74e6bf441e",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_cee9c58f90737387",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_1e78c2cd090a8c31",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_811b538478e4f00a",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        },
+        {
+          "category_id": "lambda-serverless",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_323e7296b2a8748b",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "deployment-monitoring",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_0585c633e80f142d",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "subnets-routing",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question_id": "q_cdbb4d5d23369f9d",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "network-security",
+          "score": 2
+        },
+        {
+          "category_id": "subnets-routing",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_cd37713da92644bb",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_09f8d23fd9a400fd",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "efs-fsx",
+          "score": 3
+        },
+        {
+          "category_id": "storage-migration",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_de7f366ebde0ba00",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "deployment-monitoring",
+          "score": 3
+        },
+        {
+          "category_id": "ebs-instance-store",
+          "score": 3
+        },
+        {
+          "category_id": "auto-scaling",
+          "score": 1
+        },
+        {
+          "category_id": "disaster-recovery",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_b4464b455eb5cff3",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        },
+        {
+          "category_id": "dynamodb",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_096b750ba7699731",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 1
+        },
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 1
+        },
+        {
+          "category_id": "storage-migration",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_400a1084ace8e743",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_36c8074a7c12e66a",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_af8faa0d462a1256",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_239afb678da2e8d1",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_5ba321868d8a744c",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 1
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_05e183400e840b52",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_be48581eae16ae4f",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "deployment-monitoring",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_1bec741f2c96e6cc",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_c2aaba818b909b16",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 3
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 3
+        },
+        {
+          "category_id": "high-availability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_74d1844f9e3953dd",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_0f523079d2cefe0c",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "lambda-serverless",
+          "score": 6
+        },
+        {
+          "category_id": "subnets-routing",
+          "score": 6
+        },
+        {
+          "category_id": "deployment-monitoring",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_fe703d9cacfc972d",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_be3d5632bb043b45",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_a7f55b948c8371af",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 3
+        },
+        {
+          "category_id": "encryption-kms",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_7507834288589670",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "efs-fsx",
+          "score": 1
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_20955b2ff4b5c0ce",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "organizations-scps",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_1575e80811032a15",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_7ed4df6fa482b640",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 3
+        },
+        {
+          "category_id": "s3-storage-classes",
+          "score": 3
+        },
+        {
+          "category_id": "auto-scaling",
+          "score": 1
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        },
+        {
+          "category_id": "efs-fsx",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_fdcf7b8bdb0c1c1b",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "ebs-instance-store",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_36e17a36a603f315",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "analytics-databases",
+          "score": 4
+        },
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_2e48fcbfce8e3513",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        },
+        {
+          "category_id": "dynamodb",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_cfdc2b3e180eb17c",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_999a96d7e4a07d17",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_f6bd979bddd4a7ff",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "containers",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_69c2a4168769ffe3",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        },
+        {
+          "category_id": "dynamodb",
+          "score": 3
+        },
+        {
+          "category_id": "lambda-serverless",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_a03dcc4526905028",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 3
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_47a103f7271c7c40",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_0cde0fc3f0307a93",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "high-availability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_31290c2f02c27d42",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_f0fb06a4ac7d9220",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 4
+        },
+        {
+          "category_id": "rds-aurora",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_d7621ef4b6955dfe",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_2e466697aa12ab9a",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_409ce733ebaf73de",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_f0c4cd7ba089847e",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_a4e19b33ff14640f",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_2e6bb4f93e8df2ae",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        },
+        {
+          "category_id": "lambda-serverless",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_2af8857ab2736c25",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 3
+        },
+        {
+          "category_id": "storage-migration",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_095fa2be2bf634e2",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "audit-compliance",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_420576d8cd0cd048",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        },
+        {
+          "category_id": "dynamodb",
+          "score": 3
+        },
+        {
+          "category_id": "lambda-serverless",
+          "score": 3
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_4f7a838d3685c373",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "ebs-instance-store",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_fbbd3a3fa26b0f59",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        },
+        {
+          "category_id": "deployment-monitoring",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_afe2ce631f4076ec",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_c42c520f67193828",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "iam-policies",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_4a4b24005a8f72e9",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_b28620ad63b8fbf2",
+      "status": "unclassified",
+      "candidates": []
+    }
+  ],
+  "all_decisions": [
+    {
+      "question_id": "q_88b8616a477675b2",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "analytics-databases",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question_id": "q_ff1100adba293e87",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dynamodb",
+          "score": 6
+        },
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        },
+        {
+          "category_id": "lambda-serverless",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_8b3131bc5ad1ced8",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "load-balancing",
+          "score": 4
+        },
+        {
+          "category_id": "network-security",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_2f4e9cb695459e43",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "caching",
+          "score": 6
+        },
+        {
+          "category_id": "dynamodb",
+          "score": 4
+        },
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        },
+        {
+          "category_id": "auto-scaling",
+          "score": 1
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_314ac23ee0e0d120",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 4
+        },
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_b20621068cc4762b",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "efs-fsx",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question_id": "q_6d1710654dde87fb",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "containers",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question_id": "q_d629a3876c72dbb0",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "load-balancing",
+          "score": 2
+        },
+        {
+          "category_id": "auto-scaling",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_56268c50bb1cbb34",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_d2094c3bc9e7a2f7",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "containers",
+          "score": 4
+        },
+        {
+          "category_id": "deployment-monitoring",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_5ac6ecbfd5b8e2ab",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_227e910a9e57f014",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "load-balancing",
+          "score": 6
+        },
+        {
+          "category_id": "vpc-endpoints",
+          "score": 6
+        },
+        {
+          "category_id": "rds-aurora",
+          "score": 4
+        },
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_500171bc0e6b055b",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "efs-fsx",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question_id": "q_a7ee9848349ff99d",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_aa16f95d648a3377",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 4
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_564eb49917c20778",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_af43d03a1ca16b0f",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_baacce41af36f7af",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_711aa4b817a118e1",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "s3-storage-classes",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question_id": "q_146942e146d882b2",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "ebs-instance-store",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_d6164b63cf090f14",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "encryption-kms",
+          "score": 10
+        },
+        {
+          "category_id": "audit-compliance",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_8ae4804e4e96822c",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_8e93818ee4255158",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "storage-migration",
+          "score": 6
+        },
+        {
+          "category_id": "efs-fsx",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_b5a0136942dcea71",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 3
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 3
+        },
+        {
+          "category_id": "high-availability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_6a13aa550ea2657d",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "s3-storage-classes",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_648ef27453a64ab2",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_8379621318e248b2",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_9eedb638bac6bb69",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "iam-policies",
+          "score": 3
+        },
+        {
+          "category_id": "efs-fsx",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_aeb60dabd33a761f",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_d59dae8fa0af301c",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "s3-storage-classes",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "question_id": "q_b2cbe87d27680472",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 7
+        },
+        {
+          "category_id": "auto-scaling",
+          "score": 3
+        },
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_1ca1c53edfef254b",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "efs-fsx",
+          "score": 4
+        },
+        {
+          "category_id": "vpc-fundamentals",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_2e93b2c7c1d5e324",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 3
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question_id": "q_6beef2fbb69f13e6",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "database-migration",
+          "score": 15
+        },
+        {
+          "category_id": "rds-aurora",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_843fc28f1e3fc612",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_4531b300d246a377",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "efs-fsx",
+          "score": 8
+        },
+        {
+          "category_id": "vpc-endpoints",
+          "score": 6
+        },
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 4
+        },
+        {
+          "category_id": "storage-migration",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_6d8dd62e1e9f377c",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "encryption-kms",
+          "score": 6
+        },
+        {
+          "category_id": "rds-aurora",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_fdc845c80d952030",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_129d97ae300c4684",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "s3-storage-classes",
+          "score": 9
+        },
+        {
+          "category_id": "analytics-databases",
+          "score": 1
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_19084a36fc855ab3",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "load-balancing",
+          "score": 4
+        },
+        {
+          "category_id": "decoupling-messaging",
+          "score": 1
+        },
+        {
+          "category_id": "dns-global-networking",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_b9b13a25970974f9",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_595a01039a6d2ae2",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_be010decc1bcade7",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 4
+        },
+        {
+          "category_id": "analytics-databases",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_ef9f64b0ad714d37",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 4
+        },
+        {
+          "category_id": "high-availability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_b64f2ec6789a0155",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_08c5cc112577c356",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "load-balancing",
+          "score": 6
+        },
+        {
+          "category_id": "network-security",
+          "score": 4
+        },
+        {
+          "category_id": "auto-scaling",
+          "score": 3
+        },
+        {
+          "category_id": "high-availability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_818169582a150326",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_e051717a69da824a",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_17710c7ad98c5583",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 3
+        },
+        {
+          "category_id": "iam-policies",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_a88b654d72d08872",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "ec2-pricing",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_b107da118e20e817",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_1307a33458e8b7de",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "vpc-fundamentals",
+          "score": 3
+        },
+        {
+          "category_id": "iam-policies",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_1894eba881e34c13",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "vpc-fundamentals",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        },
+        {
+          "category_id": "organizations-scps",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_bbfd23890f034602",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 3
+        },
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 3
+        },
+        {
+          "category_id": "storage-migration",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_9df64ebd5e3f7422",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "iam-policies",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_7c41d3eba6bfbf6a",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "load-balancing",
+          "score": 5
+        },
+        {
+          "category_id": "auto-scaling",
+          "score": 4
+        },
+        {
+          "category_id": "rds-aurora",
+          "score": 4
+        },
+        {
+          "category_id": "network-security",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_92db743939e487a9",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "iam-policies",
+          "score": 6
+        },
+        {
+          "category_id": "dynamodb",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_702a1675786520db",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_4013102f805809e5",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "network-security",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_9e540e9a3074f094",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_bcb22b4ea5082a9e",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "containers",
+          "score": 10
+        },
+        {
+          "category_id": "decoupling-messaging",
+          "score": 1
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_e6e506f547e338cd",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_f1f15e4eed4d24ff",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "load-balancing",
+          "score": 3
+        },
+        {
+          "category_id": "auto-scaling",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_4aa95f11c5c4c908",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "s3-storage-classes",
+          "score": 9
+        },
+        {
+          "category_id": "storage-migration",
+          "score": 4
+        },
+        {
+          "category_id": "amazon-s3",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_e05197605001c5f2",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 4
+        },
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_fed53ebf9c67dc5e",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 4
+        },
+        {
+          "category_id": "containers",
+          "score": 4
+        },
+        {
+          "category_id": "deployment-monitoring",
+          "score": 1
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 1
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_c6b1b9f19f96c6d4",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "database-migration",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "question_id": "q_e4a9f6b4b54ef6a5",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_a95cef1c180ba77f",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_43c2e2cc7fe7beca",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "load-balancing",
+          "score": 2
+        },
+        {
+          "category_id": "subnets-routing",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_bc36f4111eaf74b5",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "efs-fsx",
+          "score": 8
+        },
+        {
+          "category_id": "storage-migration",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question_id": "q_f984761f7e95688f",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 4
+        },
+        {
+          "category_id": "encryption-kms",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_08557f806c991fab",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "subnets-routing",
+          "score": 12
+        },
+        {
+          "category_id": "high-availability",
+          "score": 1
+        },
+        {
+          "category_id": "vpc-fundamentals",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_dc028c74e6bf441e",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_e5b6d16b4013a4e5",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "containers",
+          "score": 6
+        },
+        {
+          "category_id": "efs-fsx",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_cee9c58f90737387",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_4c89e4fb78c6638f",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "vpc-endpoints",
+          "score": 6
+        },
+        {
+          "category_id": "subnets-routing",
+          "score": 5
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_338c11be65e09e34",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "storage-migration",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_06bc5322c40bcce2",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        },
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_973581b2b4a8ca83",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_c81d3521be1b744a",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "network-security",
+          "score": 7
+        },
+        {
+          "category_id": "amazon-s3",
+          "score": 4
+        },
+        {
+          "category_id": "dns-global-networking",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_9df5b730e660d876",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "audit-compliance",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_02699e17fd995f0a",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "caching",
+          "score": 4
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_1e78c2cd090a8c31",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_f1e1801e2903eda1",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "subnets-routing",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question_id": "q_811b538478e4f00a",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        },
+        {
+          "category_id": "lambda-serverless",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_9d7ce422428f78a6",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "deployment-monitoring",
+          "score": 3
+        },
+        {
+          "category_id": "organizations-scps",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_ca74f3e1ac6709be",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 5
+        },
+        {
+          "category_id": "vpc-endpoints",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_81cb2ef6922a7bbe",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "efs-fsx",
+          "score": 6
+        },
+        {
+          "category_id": "storage-migration",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_323e7296b2a8748b",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "deployment-monitoring",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_0585c633e80f142d",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "subnets-routing",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question_id": "q_b4a74fa6d81907b3",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question_id": "q_cdbb4d5d23369f9d",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "network-security",
+          "score": 2
+        },
+        {
+          "category_id": "subnets-routing",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_cd37713da92644bb",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_09f8d23fd9a400fd",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "efs-fsx",
+          "score": 3
+        },
+        {
+          "category_id": "storage-migration",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_1c6f896e548d16f1",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "subnets-routing",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question_id": "q_cf3cc323a41e7f57",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "efs-fsx",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question_id": "q_0209e4d0c2170030",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "ebs-instance-store",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_97c8cf0ed3aaae14",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_de7f366ebde0ba00",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "deployment-monitoring",
+          "score": 3
+        },
+        {
+          "category_id": "ebs-instance-store",
+          "score": 3
+        },
+        {
+          "category_id": "auto-scaling",
+          "score": 1
+        },
+        {
+          "category_id": "disaster-recovery",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_1778501bcc2fff64",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "efs-fsx",
+          "score": 3
+        },
+        {
+          "category_id": "containers",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_b4464b455eb5cff3",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        },
+        {
+          "category_id": "dynamodb",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_33adb484358c99a6",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "organizations-scps",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_22c43a17cbb1fe1f",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question_id": "q_d3cdece7d1f3ab24",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 7
+        },
+        {
+          "category_id": "vpc-fundamentals",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_6bd6e5e255e47edd",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "lambda-serverless",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_acd2b3d8bbc65e45",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_3feaca69bfb6d846",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "database-migration",
+          "score": 9
+        },
+        {
+          "category_id": "decoupling-messaging",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_096b750ba7699731",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 1
+        },
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 1
+        },
+        {
+          "category_id": "storage-migration",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_400a1084ace8e743",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_46af85cbc964d352",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dynamodb",
+          "score": 3
+        },
+        {
+          "category_id": "subnets-routing",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_36c8074a7c12e66a",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_af8faa0d462a1256",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_7c390ee375abfe62",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "containers",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "question_id": "q_c49faa5fab8a3513",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 4
+        },
+        {
+          "category_id": "caching",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_b0656b3dce79863f",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dynamodb",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_239afb678da2e8d1",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_5ba321868d8a744c",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 1
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_23ec0784134814aa",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_fcd0bb6caa582d4d",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_05e183400e840b52",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_381f98dd8e9038db",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "iam-policies",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_dfb87b740ddadcc5",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "high-availability",
+          "score": 3
+        },
+        {
+          "category_id": "caching",
+          "score": 2
+        },
+        {
+          "category_id": "disaster-recovery",
+          "score": 1
+        },
+        {
+          "category_id": "rds-aurora",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_37f828214c719199",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question_id": "q_be48581eae16ae4f",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "deployment-monitoring",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_1bec741f2c96e6cc",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_d19f7a8258ed563d",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "audit-compliance",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_c2aaba818b909b16",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 3
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 3
+        },
+        {
+          "category_id": "high-availability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_fdeff803896c05e6",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dynamodb",
+          "score": 11
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_a855eaa3de02f2b6",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dynamodb",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "question_id": "q_74d1844f9e3953dd",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_b796ba971afc0fb4",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "disaster-recovery",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_284e7c9c575cca59",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question_id": "q_b74ffd993deacef4",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 4
+        },
+        {
+          "category_id": "deployment-monitoring",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_a8f330784db71dfe",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "storage-migration",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_f547e8862fbe837b",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        },
+        {
+          "category_id": "efs-fsx",
+          "score": 1
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_0f523079d2cefe0c",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "lambda-serverless",
+          "score": 6
+        },
+        {
+          "category_id": "subnets-routing",
+          "score": 6
+        },
+        {
+          "category_id": "deployment-monitoring",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_fe703d9cacfc972d",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_8dec8b1695907c5c",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_90d48751b3adebf9",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 4
+        },
+        {
+          "category_id": "lambda-serverless",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_aebc6fadfdf890f5",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "storage-migration",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_f23c02004565a68e",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "containers",
+          "score": 5
+        },
+        {
+          "category_id": "auto-scaling",
+          "score": 3
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_f5edc7b09677caf4",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "performance-scalability",
+          "score": 4
+        },
+        {
+          "category_id": "rds-aurora",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_be3d5632bb043b45",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_a7f55b948c8371af",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 3
+        },
+        {
+          "category_id": "encryption-kms",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_370a9d66895c2f32",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "caching",
+          "score": 6
+        },
+        {
+          "category_id": "rds-aurora",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question_id": "q_8deaf2cb192acb5e",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 4
+        },
+        {
+          "category_id": "high-availability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_e2292734232c2421",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "s3-storage-classes",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_7507834288589670",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "efs-fsx",
+          "score": 1
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_20955b2ff4b5c0ce",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "organizations-scps",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_1bd86d3835f65c78",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 4
+        },
+        {
+          "category_id": "vpc-fundamentals",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_a5853455440dfff9",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question_id": "q_f889f50f59bd3a8d",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dynamodb",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_9743bad4fd0d44ed",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "ebs-instance-store",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_d3b4b9d4e3ac9021",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        },
+        {
+          "category_id": "high-availability",
+          "score": 1
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_de9ee65864d93343",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question_id": "q_eb389a67bdcc0e47",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 4
+        },
+        {
+          "category_id": "amazon-s3",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_2abb47c19ccdb1a1",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "network-security",
+          "score": 4
+        },
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_8383b54b8b69b70e",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 7
+        },
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_d72eef62565bf9a7",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "deployment-monitoring",
+          "score": 3
+        },
+        {
+          "category_id": "rds-aurora",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_3c7c389000f60349",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "load-balancing",
+          "score": 5
+        },
+        {
+          "category_id": "deployment-monitoring",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_d3a9f6c875d18431",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "encryption-kms",
+          "score": 9
+        },
+        {
+          "category_id": "amazon-s3",
+          "score": 3
+        },
+        {
+          "category_id": "analytics-databases",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_20f87d629253b54f",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "load-balancing",
+          "score": 6
+        },
+        {
+          "category_id": "auto-scaling",
+          "score": 3
+        },
+        {
+          "category_id": "rds-aurora",
+          "score": 3
+        },
+        {
+          "category_id": "dns-global-networking",
+          "score": 1
+        },
+        {
+          "category_id": "high-availability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_95dfc8b36170439b",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 4
+        },
+        {
+          "category_id": "high-availability",
+          "score": 3
+        },
+        {
+          "category_id": "lambda-serverless",
+          "score": 1
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_64e4bf4970f01086",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_be8553e9c0be706e",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_5873eb3b9cde54af",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "storage-migration",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_5242179f53b6532c",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "network-security",
+          "score": 7
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_ab23fea3942105d0",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "load-balancing",
+          "score": 6
+        },
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_3edf24a19bbdebbc",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_1575e80811032a15",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_24c25882f7347684",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "load-balancing",
+          "score": 8
+        },
+        {
+          "category_id": "auto-scaling",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_7ed4df6fa482b640",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 3
+        },
+        {
+          "category_id": "s3-storage-classes",
+          "score": 3
+        },
+        {
+          "category_id": "auto-scaling",
+          "score": 1
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        },
+        {
+          "category_id": "efs-fsx",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_ec2d2c6a4389e0df",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "organizations-scps",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "question_id": "q_74928850741ad8e0",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "s3-storage-classes",
+          "score": 6
+        },
+        {
+          "category_id": "storage-migration",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_601b2ad74e12c7e1",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "efs-fsx",
+          "score": 3
+        },
+        {
+          "category_id": "containers",
+          "score": 2
+        },
+        {
+          "category_id": "disaster-recovery",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question_id": "q_cade8981776bf3d4",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "storage-migration",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question_id": "q_fdcf7b8bdb0c1c1b",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "ebs-instance-store",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_21b843cf7ef14981",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "analytics-databases",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_d90141935df398ea",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "caching",
+          "score": 7
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_04c67229be0b8ea8",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "deployment-monitoring",
+          "score": 4
+        },
+        {
+          "category_id": "auto-scaling",
+          "score": 1
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_36e17a36a603f315",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "analytics-databases",
+          "score": 4
+        },
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_2e48fcbfce8e3513",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        },
+        {
+          "category_id": "dynamodb",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_0b60b40017e52670",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "ebs-instance-store",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_647eee15692a73b9",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_fbec2bd9673bbe9b",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_015ac6cc5543abd4",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dynamodb",
+          "score": 5
+        },
+        {
+          "category_id": "subnets-routing",
+          "score": 4
+        },
+        {
+          "category_id": "vpc-endpoints",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_cfdc2b3e180eb17c",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_999a96d7e4a07d17",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_6417a5c62ab480ac",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "disaster-recovery",
+          "score": 11
+        },
+        {
+          "category_id": "rds-aurora",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_5b7bf7976d46b7b8",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "network-security",
+          "score": 6
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_59740ede22395c2a",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question_id": "q_f6bd979bddd4a7ff",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "containers",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_357d08e0afc32dc6",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "ebs-instance-store",
+          "score": 5
+        },
+        {
+          "category_id": "high-availability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_69c2a4168769ffe3",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        },
+        {
+          "category_id": "dynamodb",
+          "score": 3
+        },
+        {
+          "category_id": "lambda-serverless",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_b483d18d917cbd12",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_e5ec98da4f449457",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_57bb6e72a49bf0f8",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_0a97e336b077d9a8",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_529349ac305e5c15",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 7
+        },
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_2ee39c29e72ce42a",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 4
+        },
+        {
+          "category_id": "dns-global-networking",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_f046060f7697ccca",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "s3-storage-classes",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_a03dcc4526905028",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 3
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_3cc65648695ec5ba",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "subnets-routing",
+          "score": 9
+        },
+        {
+          "category_id": "vpc-endpoints",
+          "score": 3
+        },
+        {
+          "category_id": "load-balancing",
+          "score": 2
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_4638d507cafcdb3d",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "s3-storage-classes",
+          "score": 6
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_47a103f7271c7c40",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_0cde0fc3f0307a93",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "high-availability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_31290c2f02c27d42",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_f0fb06a4ac7d9220",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 4
+        },
+        {
+          "category_id": "rds-aurora",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_b6e1687a41110ff5",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "audit-compliance",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_25dcf0ec198c3174",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "ebs-instance-store",
+          "score": 4
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_d7621ef4b6955dfe",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_6d3c1103c7cfadcf",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "containers",
+          "score": 6
+        },
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_1d19afdbf9b9e335",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "vpc-endpoints",
+          "score": 3
+        },
+        {
+          "category_id": "amazon-s3",
+          "score": 1
+        },
+        {
+          "category_id": "subnets-routing",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_2e466697aa12ab9a",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_288cd14139fc0e9b",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_409ce733ebaf73de",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_f0c4cd7ba089847e",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_07f9a25e8fa8e801",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "ec2-pricing",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_84a72035edde531b",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "analytics-databases",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question_id": "q_a15d67c7a5f8e922",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 6
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_c87ea07429c64953",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "question_id": "q_a4e19b33ff14640f",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_5c4c1903806fff28",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "organizations-scps",
+          "score": 3
+        },
+        {
+          "category_id": "network-security",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_8006dcf1c8c6874c",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "question_id": "q_4c072922c7309bb4",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 7
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_ecde0c24a6a6c8d9",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question_id": "q_5b790874b1f95107",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "caching",
+          "score": 12
+        },
+        {
+          "category_id": "high-availability",
+          "score": 4
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 4
+        },
+        {
+          "category_id": "dynamodb",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_2e6bb4f93e8df2ae",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        },
+        {
+          "category_id": "lambda-serverless",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_7f14af0087a8c54a",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "amazon-s3",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_266b78b7e04585f6",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "efs-fsx",
+          "score": 4
+        },
+        {
+          "category_id": "ebs-instance-store",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_d886133c712b0952",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 4
+        },
+        {
+          "category_id": "lambda-serverless",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_4265721f90368e34",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "ec2-pricing",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_7dc931e9a70e6db3",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_2af8857ab2736c25",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "hybrid-connectivity",
+          "score": 3
+        },
+        {
+          "category_id": "storage-migration",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_095fa2be2bf634e2",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "audit-compliance",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_420576d8cd0cd048",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        },
+        {
+          "category_id": "dynamodb",
+          "score": 3
+        },
+        {
+          "category_id": "lambda-serverless",
+          "score": 3
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_79ce94bae4646697",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "caching",
+          "score": 9
+        },
+        {
+          "category_id": "dynamodb",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_c83e6221bc818bb7",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "encryption-kms",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "question_id": "q_a046d20936ab91e9",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_869c4b6595028587",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_4f7a838d3685c373",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "ebs-instance-store",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_fbbd3a3fa26b0f59",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "decoupling-messaging",
+          "score": 3
+        },
+        {
+          "category_id": "deployment-monitoring",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_db6e7b51ee9ec036",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_e92e66ee78fa713e",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "efs-fsx",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_afe2ce631f4076ec",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "auto-scaling",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_0b208c7c0ca46b79",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dns-global-networking",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_5e525382757d82c9",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "encryption-kms",
+          "score": 8
+        },
+        {
+          "category_id": "amazon-s3",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "question_id": "q_9aa4a3f35ef02b3e",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 7
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 3
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_3f784d62a9243a27",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "dynamodb",
+          "score": 3
+        },
+        {
+          "category_id": "high-availability",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_c42c520f67193828",
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "category_id": "iam-policies",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_4a4b24005a8f72e9",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_b28620ad63b8fbf2",
+      "status": "unclassified",
+      "candidates": []
+    },
+    {
+      "question_id": "q_d111c74bdc3556a2",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "database-migration",
+          "score": 9
+        },
+        {
+          "category_id": "analytics-databases",
+          "score": 5
+        },
+        {
+          "category_id": "rds-aurora",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_2d6808a7a7314283",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_34c78103936b34a9",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "ec2-pricing",
+          "score": 4
+        },
+        {
+          "category_id": "auto-scaling",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "question_id": "q_b737864b6a4cbab4",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 7
+        },
+        {
+          "category_id": "database-migration",
+          "score": 3
+        },
+        {
+          "category_id": "performance-scalability",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "question_id": "q_29be387d4d69a38c",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "load-balancing",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "question_id": "q_0d9f1859426684c4",
+      "status": "classified",
+      "candidates": [
+        {
+          "category_id": "rds-aurora",
+          "score": 6
+        },
+        {
+          "category_id": "disaster-recovery",
+          "score": 2
+        },
+        {
+          "category_id": "cost-optimization",
+          "score": 1
+        }
+      ]
+    }
+  ]
+}
