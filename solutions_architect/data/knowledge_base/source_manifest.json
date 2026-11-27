@@ -1,0 +1,348 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "source_id": "source_91c17352f1789149e753",
+      "title": "SAA-C03 Topic Guides — Study Index",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/00-README.md",
+      "file_path": "topic-guides/00-README.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_8d2c8a7671152f83ad91",
+      "title": "Section 1: IAM — Identity and Access Management",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/01-IAM.md",
+      "file_path": "topic-guides/01-IAM.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_b19d35b7f0f0eb95b0c7",
+      "title": "Section 2: S3 — Simple Storage Service",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/02-S3.md",
+      "file_path": "topic-guides/02-S3.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_ae343cc3a1e9787773d8",
+      "title": "Section 3: EC2 — Elastic Compute Cloud",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/03-EC2.md",
+      "file_path": "topic-guides/03-EC2.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_ecaa832304a81c41d359",
+      "title": "Section 4: EBS, EFS & Instance Store",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/04-EBS-EFS-InstanceStore.md",
+      "file_path": "topic-guides/04-EBS-EFS-InstanceStore.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_a414bac34f0b438a31e7",
+      "title": "Section 5: Elastic Load Balancing & Auto Scaling",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/05-ELB-AutoScaling.md",
+      "file_path": "topic-guides/05-ELB-AutoScaling.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_f3cfec42a1d3fb92c6aa",
+      "title": "Section 6: VPC — Virtual Private Cloud",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/06-VPC.md",
+      "file_path": "topic-guides/06-VPC.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_8a01bd58aafb77106121",
+      "title": "Section 7: Route 53",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/07-Route53.md",
+      "file_path": "topic-guides/07-Route53.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_d26243e7a4130da38244",
+      "title": "Section 8: CloudFront & Global Accelerator",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/08-CloudFront-GlobalAccelerator.md",
+      "file_path": "topic-guides/08-CloudFront-GlobalAccelerator.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_4fce35bae54895785015",
+      "title": "Section 9: RDS & Aurora",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/09-RDS-Aurora.md",
+      "file_path": "topic-guides/09-RDS-Aurora.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_6ee268aad77c26741f86",
+      "title": "Section 10: DynamoDB",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/10-DynamoDB.md",
+      "file_path": "topic-guides/10-DynamoDB.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_1b2a439224fcdda778fa",
+      "title": "Section 11: ElastiCache",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/11-ElastiCache.md",
+      "file_path": "topic-guides/11-ElastiCache.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_a87a2bada5350dcb9216",
+      "title": "Section 12: The Other Databases (keyword zoo)",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/12-Other-Databases.md",
+      "file_path": "topic-guides/12-Other-Databases.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_53c5f5afb3e1f508b804",
+      "title": "Section 13: Lambda",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/13-Lambda.md",
+      "file_path": "topic-guides/13-Lambda.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_c24b787df32f5870abbb",
+      "title": "Section 14: ECS, EKS & Fargate",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/14-ECS-EKS-Fargate.md",
+      "file_path": "topic-guides/14-ECS-EKS-Fargate.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_956a52e44f441b5e496d",
+      "title": "Section 15: Elastic Beanstalk",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/15-Elastic-Beanstalk.md",
+      "file_path": "topic-guides/15-Elastic-Beanstalk.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_b1d3f013248e2855d0bc",
+      "title": "Section 16: API Gateway",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/16-API-Gateway.md",
+      "file_path": "topic-guides/16-API-Gateway.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_0b9574ca9ec72a2bb15c",
+      "title": "Section 17: SQS, SNS & Kinesis — the messaging block",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/17-SQS-SNS-Kinesis.md",
+      "file_path": "topic-guides/17-SQS-SNS-Kinesis.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_492b72e729fa35ec759b",
+      "title": "Section 18: EventBridge & Step Functions",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/18-EventBridge-StepFunctions.md",
+      "file_path": "topic-guides/18-EventBridge-StepFunctions.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_1b0e3a01cc75162e5e40",
+      "title": "Section 19: CloudWatch, CloudTrail & AWS Config",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/19-CloudWatch-CloudTrail-Config.md",
+      "file_path": "topic-guides/19-CloudWatch-CloudTrail-Config.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_36c0c19d5447e112621f",
+      "title": "Section 20: KMS & CloudHSM",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/20-KMS-CloudHSM.md",
+      "file_path": "topic-guides/20-KMS-CloudHSM.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_b4ab073b671127b9f1fa",
+      "title": "Section 21: Secrets Manager & Parameter Store",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/21-SecretsManager-ParameterStore.md",
+      "file_path": "topic-guides/21-SecretsManager-ParameterStore.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_6382a3a0133bf1656b64",
+      "title": "Section 22: WAF, Shield & the Security Service Zoo",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/22-WAF-Shield-SecurityServices.md",
+      "file_path": "topic-guides/22-WAF-Shield-SecurityServices.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_9663859268abed20b2b6",
+      "title": "Section 23: Cognito",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/23-Cognito.md",
+      "file_path": "topic-guides/23-Cognito.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_21ca4c831b029f1fb574",
+      "title": "Section 24: Directory Services",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/24-Directory-Services.md",
+      "file_path": "topic-guides/24-Directory-Services.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_c8f31c6ecd0470b577d0",
+      "title": "Section 25: Storage Gateway, DataSync & Transfer Family",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/25-StorageGateway-DataSync-TransferFamily.md",
+      "file_path": "topic-guides/25-StorageGateway-DataSync-TransferFamily.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_41e4f41f0348984d7ad1",
+      "title": "Section 26: FSx Family",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/26-FSx.md",
+      "file_path": "topic-guides/26-FSx.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_b53f11fea8a45772aefa",
+      "title": "Section 27: Snow Family",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/27-Snow-Family.md",
+      "file_path": "topic-guides/27-Snow-Family.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_0d4a35085bc3fffa2e8d",
+      "title": "Section 28: CloudFormation",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/28-CloudFormation.md",
+      "file_path": "topic-guides/28-CloudFormation.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_8e1ef24071e05d6944db",
+      "title": "Section 29: AWS Organizations & Control Tower",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/29-Organizations-ControlTower.md",
+      "file_path": "topic-guides/29-Organizations-ControlTower.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_cbbdec5984c54f99c9d2",
+      "title": "Section 30: Service Catalog & Trusted Advisor",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/30-ServiceCatalog-TrustedAdvisor.md",
+      "file_path": "topic-guides/30-ServiceCatalog-TrustedAdvisor.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_81a4e5685e94711bc713",
+      "title": "Section 31: Cost Management Tools",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/31-Cost-Management.md",
+      "file_path": "topic-guides/31-Cost-Management.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_ffae05d668f470232336",
+      "title": "Section 32: Direct Connect & VPN",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/32-DirectConnect-VPN.md",
+      "file_path": "topic-guides/32-DirectConnect-VPN.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_a8b2435ac781ddfb12b7",
+      "title": "Section 33: Transit Gateway",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/33-Transit-Gateway.md",
+      "file_path": "topic-guides/33-Transit-Gateway.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_341efdc44fef605d7df9",
+      "title": "Section 34: Well-Architected Framework",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/34-Well-Architected.md",
+      "file_path": "topic-guides/34-Well-Architected.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_055a21614423a34190f5",
+      "title": "Section 35: Disaster Recovery",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/35-Disaster-Recovery.md",
+      "file_path": "topic-guides/35-Disaster-Recovery.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_ce4deffbdc37f0c51bde",
+      "title": "Section 36: Classic Traps & Must-Know Combos",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/36-Exam-Traps-KeyPatterns.md",
+      "file_path": "topic-guides/36-Exam-Traps-KeyPatterns.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    },
+    {
+      "source_id": "source_74c0bb6ce23f8cd54c9c",
+      "title": "Section 37: The Gap-Fill Services (small but tested)",
+      "source_type": "community_guide",
+      "repository": "https://github.com/RonitSachdev/aws-saa-c03-guides",
+      "url": "https://github.com/RonitSachdev/aws-saa-c03-guides/blob/a71e466f02702fe01a6fe414c0b49cb8a673d205/topic-guides/37-GapFill-Services.md",
+      "file_path": "topic-guides/37-GapFill-Services.md",
+      "revision": "a71e466f02702fe01a6fe414c0b49cb8a673d205"
+    }
+  ],
+  "total_chunks": 334
+}
