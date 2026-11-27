@@ -1,0 +1,523 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    /* ---------------------------------------
+       SOLUTIONS ARCHITECT LANDING PAGE
+    --------------------------------------- */
+
+    .sa-page {
+        --sa-primary: #187ABA;
+        --sa-accent: #01AEEE;
+        --sa-text: #172B46;
+        --sa-muted: #66758A;
+        --sa-border: #E3EAF1;
+        --sa-surface: #F7F9FC;
+
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 60px 24px 96px;
+        color: var(--sa-text);
+        font-family: inherit;
+    }
+
+    .sa-page *,
+    .sa-page *::before,
+    .sa-page *::after {
+        box-sizing: border-box;
+    }
+
+    /* ---------------------------------------
+       HEADER
+    --------------------------------------- */
+
+    .sa-header {
+        margin-bottom: 42px;
+    }
+
+    .sa-eyebrow {
+        color: var(--sa-primary);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    .sa-heading {
+        font-size: clamp(32px, 4vw, 48px);
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: -1.5px;
+        margin: 0 0 16px;
+        color: var(--sa-text);
+    }
+
+    .sa-subheading {
+        max-width: 660px;
+        font-size: 16px;
+        line-height: 1.7;
+        color: var(--sa-muted);
+        margin: 0;
+    }
+
+    /* ---------------------------------------
+       LIBRARY STATISTICS
+    --------------------------------------- */
+
+    .sa-stats {
+        display: flex;
+        gap: 36px;
+        flex-wrap: wrap;
+        margin: 32px 0 0;
+        padding: 24px 0;
+        border-top: 1px solid var(--sa-border);
+        border-bottom: 1px solid var(--sa-border);
+    }
+
+    .sa-stat {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .sa-stat-number {
+        font-size: 25px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: var(--sa-text);
+    }
+
+    .sa-stat-label {
+        font-size: 12px;
+        color: var(--sa-muted);
+        font-weight: 500;
+    }
+
+    /* ---------------------------------------
+       SECTION HEADER
+    --------------------------------------- */
+
+    .sa-section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 16px;
+        margin: 48px 0 22px;
+    }
+
+    .sa-section-title {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        margin: 0;
+        color: var(--sa-text);
+    }
+
+    .sa-section-caption {
+        margin: 6px 0 0;
+        color: var(--sa-muted);
+        font-size: 13px;
+    }
+
+    /* ---------------------------------------
+       TOPIC CARD GRID
+    --------------------------------------- */
+
+    .sa-topic-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .sa-topic-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+        padding: 26px;
+        background: #FFFFFF;
+        border: 1px solid var(--sa-border);
+        border-radius: 14px;
+        text-decoration: none;
+        color: inherit;
+        transition:
+            transform 0.2s ease,
+            border-color 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+    .sa-topic-card:hover {
+        transform: translateY(-3px);
+        border-color: #9BCAE7;
+        box-shadow: 0 12px 28px rgba(24, 122, 186, 0.08);
+        text-decoration: none;
+    }
+
+    .sa-topic-card:focus-visible {
+        outline: 3px solid var(--sa-accent);
+        outline-offset: 3px;
+    }
+
+    /* ---------------------------------------
+       ICONS
+    --------------------------------------- */
+
+    .sa-icon-wrap {
+        display: inline-flex;
+        width: 46px;
+        height: 46px;
+        align-items: center;
+        justify-content: center;
+        color: var(--sa-primary);
+        background: #EFF7FC;
+        border-radius: 12px;
+        margin-bottom: 24px;
+    }
+
+    .sa-icon {
+        width: 25px;
+        height: 25px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.7;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    /* ---------------------------------------
+       CARD CONTENT
+    --------------------------------------- */
+
+    .sa-card-title {
+        font-size: 19px;
+        font-weight: 700;
+        margin: 0 0 8px;
+        letter-spacing: -0.3px;
+        color: var(--sa-text);
+    }
+
+    .sa-card-description {
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--sa-muted);
+        margin: 0 0 24px;
+    }
+
+    .sa-card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        margin-top: auto;
+        padding-top: 14px;
+        border-top: 1px solid var(--sa-border);
+    }
+
+    .sa-card-counts {
+        font-size: 12px;
+        color: var(--sa-muted);
+    }
+
+    .sa-card-counts strong {
+        color: var(--sa-text);
+        font-weight: 600;
+    }
+
+    .sa-card-arrow {
+        font-size: 20px;
+        line-height: 1;
+        color: var(--sa-primary);
+        transition: transform 0.2s ease;
+    }
+
+    .sa-topic-card:hover .sa-card-arrow {
+        transform: translateX(4px);
+    }
+
+    /* ---------------------------------------
+       EMPTY STATE
+    --------------------------------------- */
+
+    .sa-empty-state {
+        padding: 32px;
+        border: 1px dashed var(--sa-border);
+        border-radius: 12px;
+        color: var(--sa-muted);
+        text-align: center;
+    }
+
+    /* ---------------------------------------
+       RESPONSIVE
+    --------------------------------------- */
+
+    @media (max-width: 900px) {
+        .sa-topic-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media (max-width: 600px) {
+        .sa-page {
+            padding: 36px 18px 64px;
+        }
+
+        .sa-topic-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .sa-topic-card {
+            min-height: 190px;
+        }
+
+        .sa-stats {
+            gap: 24px;
+        }
+
+        .sa-section-header {
+            margin-top: 36px;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .sa-topic-card,
+        .sa-card-arrow {
+            transition: none;
+        }
+    }
+</style>
+
+
+<main class="sa-page">
+
+    <!-- ---------------------------------
+         INTRODUCTION
+    ---------------------------------- -->
+
+    <header class="sa-header">
+
+        <div class="sa-eyebrow">
+            AWS Solutions Architect Associate
+        </div>
+
+        <h1 class="sa-heading">
+            Explore AWS Architecture
+        </h1>
+
+        <p class="sa-subheading">
+            Learn AWS architecture through real scenarios.
+            Explore the services, recognize important
+            patterns, and understand the reasoning
+            behind each solution.
+        </p>
+
+        <!-- LIBRARY STATISTICS -->
+
+        <div class="sa-stats">
+
+            <div class="sa-stat">
+                <span class="sa-stat-number">
+                    {{ topics | length }}
+                </span>
+                <span class="sa-stat-label">
+                    Study topics
+                </span>
+            </div>
+
+            <div class="sa-stat">
+                <span class="sa-stat-number">
+                    {{ statistics.total_questions }}
+                </span>
+                <span class="sa-stat-label">
+                    Questions
+                </span>
+            </div>
+
+            <div class="sa-stat">
+                <span class="sa-stat-number">
+                    {{ statistics.enriched_questions }}
+                </span>
+                <span class="sa-stat-label">
+                    Explained questions
+                </span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ---------------------------------
+         TOPIC SECTION
+    ---------------------------------- -->
+
+    <section aria-labelledby="sa-topics-heading">
+
+        <div class="sa-section-header">
+
+            <div>
+                <h2
+                    class="sa-section-title"
+                    id="sa-topics-heading"
+                >
+                    Study Topics
+                </h2>
+
+                <p class="sa-section-caption">
+                    Select a topic to explore its categories.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- TOPIC CARDS -->
+
+        {% if topics %}
+
+        <div class="sa-topic-grid">
+
+            {% for topic in topics %}
+
+            <a
+                class="sa-topic-card"
+                href="{{ url_for(
+                    'solutions_architect.categories',
+                    topic_id=topic.id
+                ) }}"
+            >
+
+                <div class="sa-icon-wrap">
+
+                    {% if topic.id == "networking" %}
+
+                    <svg class="sa-icon" viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <rect x="9" y="2" width="6" height="5" rx="1"/>
+                        <rect x="2" y="17" width="6" height="5" rx="1"/>
+                        <rect x="16" y="17" width="6" height="5" rx="1"/>
+                        <path d="M12 7v5M5 17v-5h14v5"/>
+                    </svg>
+
+                    {% elif topic.id == "storage" %}
+
+                    <svg class="sa-icon" viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                        <path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/>
+                        <path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/>
+                    </svg>
+
+                    {% elif topic.id == "compute" %}
+
+                    <svg class="sa-icon" viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <rect x="5" y="5" width="14" height="14" rx="2"/>
+                        <rect x="9" y="9" width="6" height="6" rx="1"/>
+                        <path d="M9 2v3M15 2v3M9 19v3M15 19v3"/>
+                        <path d="M2 9h3M2 15h3M19 9h3M19 15h3"/>
+                    </svg>
+
+                    {% elif topic.id == "databases" %}
+
+                    <svg class="sa-icon" viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <ellipse cx="12" cy="5" rx="8" ry="3"/>
+                        <path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/>
+                        <path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>
+                        <path d="M4 19c0-1.7 3.6-3 8-3s8 1.3 8 3"
+                              opacity="0"/>
+                        <path d="M4 12v7M20 12v7"/>
+                    </svg>
+
+                    {% elif topic.id == "security" %}
+
+                    <svg class="sa-icon" viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <path d="M12 2 21 6v6c0 5-3.5 8-9 10
+                                 -5.5-2-9-5-9-10V6z"/>
+                        <path d="m8 12 3 3 5-6"/>
+                    </svg>
+
+                    {% else %}
+
+                    <svg class="sa-icon" viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <rect x="2" y="3" width="8" height="7" rx="1"/>
+                        <rect x="14" y="3" width="8" height="7" rx="1"/>
+                        <rect x="8" y="14" width="8" height="7" rx="1"/>
+                        <path d="M6 10v2h12v-2M12 12v2"/>
+                    </svg>
+
+                    {% endif %}
+
+                </div>
+
+
+                <h3 class="sa-card-title">
+                    {{ topic.name }}
+                </h3>
+
+                {% if topic.description %}
+
+                <p class="sa-card-description">
+                    {{ topic.description }}
+                </p>
+
+                {% else %}
+
+                <p class="sa-card-description">
+                    Explore AWS services, architecture
+                    patterns, and practical scenarios.
+                </p>
+
+                {% endif %}
+
+
+                <div class="sa-card-footer">
+
+                    <span class="sa-card-counts">
+
+                        <strong>
+                            {{ topic.category_count }}
+                        </strong>
+                        categories
+
+                        &nbsp;·&nbsp;
+
+                        <strong>
+                            {{ topic.question_count }}
+                        </strong>
+                        questions
+
+                    </span>
+
+                    <span
+                        class="sa-card-arrow"
+                        aria-hidden="true"
+                    >
+                        &rarr;
+                    </span>
+
+                </div>
+
+            </a>
+
+            {% endfor %}
+
+        </div>
+
+        {% else %}
+
+        <div class="sa-empty-state">
+            No study topics are available yet.
+        </div>
+
+        {% endif %}
+
+    </section>
+
+</main>
+
+{% endblock %}

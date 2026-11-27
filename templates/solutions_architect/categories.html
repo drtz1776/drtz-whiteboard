@@ -1,0 +1,621 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    /* ---------------------------------------
+       CATEGORY PAGE
+    --------------------------------------- */
+
+    .sa-page {
+        --sa-primary: #187ABA;
+        --sa-accent: #01AEEE;
+        --sa-text: #172B46;
+        --sa-muted: #66758A;
+        --sa-border: #E3EAF1;
+        --sa-surface: #F7F9FC;
+
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 48px 24px 96px;
+        color: var(--sa-text);
+        font-family: inherit;
+    }
+
+    .sa-page *,
+    .sa-page *::before,
+    .sa-page *::after {
+        box-sizing: border-box;
+    }
+
+    /* ---------------------------------------
+       BREADCRUMBS
+    --------------------------------------- */
+
+    .sa-breadcrumbs {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 42px;
+        font-size: 13px;
+        color: var(--sa-muted);
+    }
+
+    .sa-breadcrumbs a {
+        color: var(--sa-muted);
+        text-decoration: none;
+    }
+
+    .sa-breadcrumbs a:hover {
+        color: var(--sa-primary);
+    }
+
+    .sa-breadcrumb-separator {
+        color: #AAB5C2;
+    }
+
+    .sa-breadcrumb-current {
+        color: var(--sa-text);
+        font-weight: 600;
+    }
+
+    /* ---------------------------------------
+       PAGE HEADER
+    --------------------------------------- */
+
+    .sa-eyebrow {
+        color: var(--sa-primary);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    .sa-heading {
+        font-size: clamp(32px, 4vw, 46px);
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: -1.3px;
+        margin: 0 0 14px;
+        color: var(--sa-text);
+    }
+
+    .sa-description {
+        max-width: 680px;
+        font-size: 16px;
+        line-height: 1.7;
+        color: var(--sa-muted);
+        margin: 0;
+    }
+
+    /* ---------------------------------------
+       TOPIC STATISTICS
+    --------------------------------------- */
+
+    .sa-stats {
+        display: flex;
+        gap: 36px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        padding: 22px 0;
+        border-top: 1px solid var(--sa-border);
+        border-bottom: 1px solid var(--sa-border);
+    }
+
+    .sa-stat {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .sa-stat-number {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .sa-stat-label {
+        color: var(--sa-muted);
+        font-size: 12px;
+    }
+
+    /* ---------------------------------------
+       SECTION HEADER
+    --------------------------------------- */
+
+    .sa-section-header {
+        margin: 48px 0 22px;
+    }
+
+    .sa-section-heading {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        margin: 0 0 6px;
+        color: var(--sa-text);
+    }
+
+    .sa-section-description {
+        font-size: 13px;
+        color: var(--sa-muted);
+        margin: 0;
+    }
+
+    /* ---------------------------------------
+       CATEGORY GRID
+    --------------------------------------- */
+
+    .sa-category-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .sa-category-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 210px;
+        padding: 25px;
+        border-radius: 14px;
+        border: 1px solid var(--sa-border);
+        background: #FFFFFF;
+        text-decoration: none;
+        color: inherit;
+
+        transition:
+            transform 0.2s ease,
+            border-color 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+    .sa-category-card:hover {
+        transform: translateY(-3px);
+        border-color: #9BCAE7;
+        box-shadow: 0 12px 28px rgba(24, 122, 186, 0.08);
+        text-decoration: none;
+    }
+
+    .sa-category-card:focus-visible {
+        outline: 3px solid var(--sa-accent);
+        outline-offset: 3px;
+    }
+
+    /* ---------------------------------------
+       CATEGORY ICON
+    --------------------------------------- */
+
+    .sa-icon-wrap {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #EFF7FC;
+        color: var(--sa-primary);
+        border-radius: 11px;
+        margin-bottom: 22px;
+    }
+
+    .sa-icon {
+        width: 24px;
+        height: 24px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.7;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    /* ---------------------------------------
+       CATEGORY CONTENT
+    --------------------------------------- */
+
+    .sa-card-title {
+        color: var(--sa-text);
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -0.3px;
+        margin: 0 0 8px;
+    }
+
+    .sa-card-description {
+        color: var(--sa-muted);
+        font-size: 13px;
+        line-height: 1.6;
+        margin: 0 0 22px;
+    }
+
+    .sa-card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        margin-top: auto;
+        padding-top: 15px;
+        border-top: 1px solid var(--sa-border);
+    }
+
+    .sa-card-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 12px;
+        color: var(--sa-muted);
+    }
+
+    .sa-card-meta strong {
+        color: var(--sa-text);
+        font-weight: 600;
+    }
+
+    .sa-card-arrow {
+        color: var(--sa-primary);
+        font-size: 20px;
+        transition: transform 0.2s ease;
+    }
+
+    .sa-category-card:hover .sa-card-arrow {
+        transform: translateX(4px);
+    }
+
+    /* ---------------------------------------
+       ENRICHMENT PROGRESS
+    --------------------------------------- */
+
+    .sa-progress {
+        width: 100%;
+        height: 4px;
+        margin-top: 16px;
+        background: #EDF1F5;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .sa-progress-fill {
+        height: 100%;
+        background: var(--sa-primary);
+        border-radius: 10px;
+    }
+
+    /* ---------------------------------------
+       EMPTY STATE
+    --------------------------------------- */
+
+    .sa-empty-state {
+        padding: 36px;
+        text-align: center;
+        color: var(--sa-muted);
+        border: 1px dashed var(--sa-border);
+        border-radius: 12px;
+    }
+
+    /* ---------------------------------------
+       RESPONSIVE
+    --------------------------------------- */
+
+    @media (max-width: 900px) {
+        .sa-category-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media (max-width: 600px) {
+        .sa-page {
+            padding: 32px 18px 64px;
+        }
+
+        .sa-category-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .sa-category-card {
+            min-height: 185px;
+        }
+
+        .sa-stats {
+            gap: 24px;
+        }
+
+        .sa-breadcrumbs {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .sa-category-card,
+        .sa-card-arrow {
+            transition: none;
+        }
+    }
+</style>
+
+
+<main class="sa-page">
+
+    <!-- BREADCRUMBS -->
+
+    <nav
+        class="sa-breadcrumbs"
+        aria-label="Breadcrumb"
+    >
+
+        <a href="{{ url_for('solutions_architect.topics') }}">
+            All Topics
+        </a>
+
+        <span
+            class="sa-breadcrumb-separator"
+            aria-hidden="true"
+        >
+            /
+        </span>
+
+        <span
+            class="sa-breadcrumb-current"
+            aria-current="page"
+        >
+            {{ topic.name }}
+        </span>
+
+    </nav>
+
+
+    <!-- TOPIC HEADER -->
+
+    <header>
+
+        <div class="sa-eyebrow">
+            Study Topic
+        </div>
+
+        <h1 class="sa-heading">
+            {{ topic.name }}
+        </h1>
+
+        <p class="sa-description">
+
+            {% if topic.description %}
+                {{ topic.description }}
+            {% else %}
+                Explore AWS services, architecture
+                patterns, and practical scenarios
+                within {{ topic.name }}.
+            {% endif %}
+
+        </p>
+
+        <!-- TOPIC STATISTICS -->
+
+        <div class="sa-stats">
+
+            <div class="sa-stat">
+
+                <span class="sa-stat-number">
+                    {{ categories | length }}
+                </span>
+
+                <span class="sa-stat-label">
+                    Categories
+                </span>
+
+            </div>
+
+            <div class="sa-stat">
+
+                <span class="sa-stat-number">
+                    {{ topic.question_count }}
+                </span>
+
+                <span class="sa-stat-label">
+                    Questions
+                </span>
+
+            </div>
+
+            <div class="sa-stat">
+
+                <span class="sa-stat-number">
+                    {{ categories
+                       | sum(attribute='enriched_count') }}
+                </span>
+
+                <span class="sa-stat-label">
+                    Explained questions
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CATEGORY SECTION -->
+
+    <section aria-labelledby="sa-categories-heading">
+
+        <div class="sa-section-header">
+
+            <h2
+                class="sa-section-heading"
+                id="sa-categories-heading"
+            >
+                Categories
+            </h2>
+
+            <p class="sa-section-description">
+                Select a category to explore its
+                questions and architectural concepts.
+            </p>
+
+        </div>
+
+
+        {% if categories %}
+
+        <div class="sa-category-grid">
+
+            {% for category in categories %}
+
+            {% set count = category.question_count %}
+            {% set explained = category.enriched_count %}
+
+            {% if count > 0 %}
+                {% set progress = (explained / count * 100) | round %}
+            {% else %}
+                {% set progress = 0 %}
+            {% endif %}
+
+            <a
+                class="sa-category-card"
+                href="{{ url_for(
+                    'solutions_architect.questions',
+                    topic_id=topic.id,
+                    category_id=category.id
+                ) }}"
+            >
+
+                <!-- CATEGORY ICON -->
+
+                <div class="sa-icon-wrap">
+
+                    <svg
+                        class="sa-icon"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+
+                        {% if topic.id == "networking" %}
+
+                        <rect x="3" y="4" width="18" height="6" rx="1"/>
+                        <rect x="3" y="14" width="18" height="6" rx="1"/>
+                        <path d="M7 7h.01M7 17h.01M12 10v4"/>
+
+                        {% elif topic.id == "storage" %}
+
+                        <path d="M4 5h16v14H4z"/>
+                        <path d="M4 10h16M8 15h8"/>
+
+                        {% elif topic.id == "compute" %}
+
+                        <rect x="4" y="4" width="16" height="16" rx="2"/>
+                        <path d="M9 8v8l6-4z"/>
+
+                        {% elif topic.id == "databases" %}
+
+                        <ellipse cx="12" cy="5" rx="8" ry="3"/>
+                        <path d="M4 5v14c0 2 4 3 8 3s8-1 8-3V5"/>
+                        <path d="M4 12c0 2 4 3 8 3s8-1 8-3"/>
+
+                        {% elif topic.id == "security" %}
+
+                        <path d="M12 2 21 6v6c0 5-4 8-9 10
+                                 -5-2-9-5-9-10V6z"/>
+                        <path d="m9 12 2 2 4-4"/>
+
+                        {% else %}
+
+                        <rect x="2" y="3" width="8" height="7" rx="1"/>
+                        <rect x="14" y="3" width="8" height="7" rx="1"/>
+                        <rect x="8" y="14" width="8" height="7" rx="1"/>
+                        <path d="M6 10v2h12v-2M12 12v2"/>
+
+                        {% endif %}
+
+                    </svg>
+
+                </div>
+
+
+                <!-- CATEGORY TITLE -->
+
+                <h3 class="sa-card-title">
+                    {{ category.name }}
+                </h3>
+
+
+                <!-- CATEGORY DESCRIPTION -->
+
+                {% if category.description %}
+
+                <p class="sa-card-description">
+                    {{ category.description }}
+                </p>
+
+                {% else %}
+
+                <p class="sa-card-description">
+                    Explore relevant services,
+                    architectural decisions,
+                    and scenario-based explanations.
+                </p>
+
+                {% endif %}
+
+
+                <!-- CATEGORY FOOTER -->
+
+                <div class="sa-card-footer">
+
+                    <div class="sa-card-meta">
+
+                        <span>
+                            <strong>{{ count }}</strong>
+                            questions
+                        </span>
+
+                        <span>
+                            <strong>{{ explained }}</strong>
+                            explained
+                        </span>
+
+                    </div>
+
+                    <span
+                        class="sa-card-arrow"
+                        aria-hidden="true"
+                    >
+                        &rarr;
+                    </span>
+
+                </div>
+
+
+                <!-- ENRICHMENT PROGRESS -->
+
+                <div
+                    class="sa-progress"
+                    role="progressbar"
+                    aria-label="Questions explained"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="{{ progress }}"
+                >
+                    <div
+                        class="sa-progress-fill"
+                        style="width: {{ progress }}%;"
+                    ></div>
+                </div>
+
+            </a>
+
+            {% endfor %}
+
+        </div>
+
+        {% else %}
+
+        <div class="sa-empty-state">
+            No categories are available for this topic.
+        </div>
+
+        {% endif %}
+
+    </section>
+
+</main>
+
+{% endblock %}

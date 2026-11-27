@@ -1,0 +1,922 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    /* ---------------------------------------
+       QUESTION LIBRARY
+    --------------------------------------- */
+
+    .sa-page {
+        --sa-primary: #187ABA;
+        --sa-accent: #01AEEE;
+        --sa-text: #172B46;
+        --sa-muted: #66758A;
+        --sa-border: #E3EAF1;
+        --sa-surface: #F7F9FC;
+
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 48px 24px 96px;
+        color: var(--sa-text);
+        font-family: inherit;
+    }
+
+    .sa-page *,
+    .sa-page *::before,
+    .sa-page *::after {
+        box-sizing: border-box;
+    }
+
+    /* ---------------------------------------
+       BREADCRUMBS
+    --------------------------------------- */
+
+    .sa-breadcrumbs {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 38px;
+        font-size: 13px;
+        color: var(--sa-muted);
+    }
+
+    .sa-breadcrumbs a {
+        color: var(--sa-muted);
+        text-decoration: none;
+    }
+
+    .sa-breadcrumbs a:hover {
+        color: var(--sa-primary);
+    }
+
+    .sa-breadcrumb-current {
+        color: var(--sa-text);
+        font-weight: 600;
+    }
+
+    .sa-breadcrumb-divider {
+        color: #AAB5C2;
+    }
+
+    /* ---------------------------------------
+       PAGE HEADER
+    --------------------------------------- */
+
+    .sa-eyebrow {
+        color: var(--sa-primary);
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    .sa-heading {
+        font-size: clamp(30px, 4vw, 44px);
+        line-height: 1.15;
+        font-weight: 700;
+        letter-spacing: -1.2px;
+        margin: 0 0 14px;
+        color: var(--sa-text);
+    }
+
+    .sa-description {
+        color: var(--sa-muted);
+        font-size: 15px;
+        line-height: 1.7;
+        max-width: 700px;
+        margin: 0;
+    }
+
+    .sa-heading-stats {
+        display: flex;
+        gap: 26px;
+        flex-wrap: wrap;
+        padding: 22px 0;
+        margin: 28px 0 32px;
+        border-top: 1px solid var(--sa-border);
+        border-bottom: 1px solid var(--sa-border);
+    }
+
+    .sa-stat {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .sa-stat-value {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .sa-stat-label {
+        color: var(--sa-muted);
+        font-size: 12px;
+    }
+
+    /* ---------------------------------------
+       SEARCH AND FILTERS
+    --------------------------------------- */
+
+    .sa-toolbar {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+
+    .sa-search-wrap {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: #FFFFFF;
+        border: 1px solid var(--sa-border);
+        border-radius: 10px;
+        padding: 0 15px;
+        min-height: 46px;
+        flex: 1 1 280px;
+        max-width: 440px;
+    }
+
+    .sa-search-icon {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+        fill: none;
+        stroke: var(--sa-muted);
+        stroke-width: 1.8;
+        stroke-linecap: round;
+    }
+
+    .sa-search-input {
+        border: none;
+        outline: none;
+        background: transparent;
+        width: 100%;
+        min-width: 0;
+        color: var(--sa-text);
+        font: inherit;
+        font-size: 13px;
+    }
+
+    .sa-search-wrap:focus-within {
+        border-color: var(--sa-primary);
+        box-shadow: 0 0 0 3px rgba(24,122,186,.1);
+    }
+
+    .sa-filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .sa-filter-btn {
+        font: inherit;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--sa-muted);
+        background: #FFFFFF;
+        border: 1px solid var(--sa-border);
+        border-radius: 8px;
+        padding: 11px 14px;
+        cursor: pointer;
+        transition: background .2s, color .2s;
+    }
+
+    .sa-filter-btn:hover {
+        border-color: #9BCAE7;
+        color: var(--sa-primary);
+    }
+
+    .sa-filter-btn.is-active {
+        background: var(--sa-primary);
+        border-color: var(--sa-primary);
+        color: #FFFFFF;
+    }
+
+    .sa-filter-btn:focus-visible {
+        outline: 3px solid var(--sa-accent);
+        outline-offset: 2px;
+    }
+
+    /* ---------------------------------------
+       RESULTS HEADER
+    --------------------------------------- */
+
+    .sa-results-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        margin: 0 0 18px;
+    }
+
+    .sa-results-title {
+        font-size: 19px;
+        font-weight: 700;
+        margin: 0;
+        color: var(--sa-text);
+    }
+
+    .sa-result-count {
+        font-size: 12px;
+        color: var(--sa-muted);
+    }
+
+    /* ---------------------------------------
+       QUESTION CARDS
+    --------------------------------------- */
+
+    .sa-question-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .sa-question-card {
+        display: block;
+        padding: 25px 28px;
+        background: #FFFFFF;
+        border: 1px solid var(--sa-border);
+        border-radius: 13px;
+        color: inherit;
+        text-decoration: none;
+
+        transition:
+            border-color .2s,
+            box-shadow .2s,
+            transform .2s;
+    }
+
+    .sa-question-card:hover {
+        transform: translateY(-2px);
+        border-color: #9BCAE7;
+        box-shadow: 0 9px 25px rgba(24,122,186,.07);
+        text-decoration: none;
+    }
+
+    .sa-question-card:focus-visible {
+        outline: 3px solid var(--sa-accent);
+        outline-offset: 3px;
+    }
+
+    .sa-card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+
+    .sa-question-number {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.1px;
+        color: var(--sa-muted);
+    }
+
+    .sa-card-statuses {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+    }
+
+    .sa-status {
+        display: inline-flex;
+        align-items: center;
+        border-radius: 6px;
+        padding: 5px 9px;
+        font-size: 11px;
+        font-weight: 600;
+        background: #F1F4F8;
+        color: #637186;
+    }
+
+    .sa-status--explained {
+        background: #E7F4FC;
+        color: #187ABA;
+    }
+
+    .sa-status--verified {
+        background: #E8F5EC;
+        color: #287848;
+    }
+
+    .sa-status--review {
+        background: #FFF2DE;
+        color: #97621C;
+    }
+
+    /* ---------------------------------------
+       QUESTION CONTENT
+    --------------------------------------- */
+
+    .sa-card-title {
+        color: var(--sa-text);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.45;
+        letter-spacing: -.2px;
+        margin: 0 0 10px;
+    }
+
+    .sa-card-description {
+        color: var(--sa-muted);
+        font-size: 13px;
+        line-height: 1.7;
+        margin: 0 0 20px;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .sa-service-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        margin-bottom: 19px;
+    }
+
+    .sa-service-tag {
+        display: inline-block;
+        padding: 6px 9px;
+        border: 1px solid #DCEAF5;
+        background: #F5FAFD;
+        color: var(--sa-primary);
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .sa-card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        padding-top: 16px;
+        border-top: 1px solid var(--sa-border);
+    }
+
+    .sa-difficulty {
+        color: var(--sa-muted);
+        font-size: 12px;
+        text-transform: capitalize;
+    }
+
+    .sa-view-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--sa-primary);
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .sa-view-arrow {
+        font-size: 18px;
+        line-height: 1;
+        transition: transform .2s;
+    }
+
+    .sa-question-card:hover .sa-view-arrow {
+        transform: translateX(4px);
+    }
+
+    /* ---------------------------------------
+       EMPTY STATES
+    --------------------------------------- */
+
+    .sa-empty {
+        padding: 44px 24px;
+        text-align: center;
+        border: 1px dashed var(--sa-border);
+        border-radius: 12px;
+        color: var(--sa-muted);
+        font-size: 14px;
+    }
+
+    [hidden] {
+        display: none !important;
+    }
+
+    /* ---------------------------------------
+       RESPONSIVE
+    --------------------------------------- */
+
+    @media (max-width: 700px) {
+        .sa-page {
+            padding: 32px 18px 64px;
+        }
+
+        .sa-toolbar {
+            align-items: stretch;
+        }
+
+        .sa-search-wrap {
+            max-width: none;
+            flex-basis: 100%;
+        }
+
+        .sa-question-card {
+            padding: 21px 18px;
+        }
+
+        .sa-card-title {
+            font-size: 16px;
+        }
+
+        .sa-heading-stats {
+            gap: 24px;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .sa-question-card,
+        .sa-view-arrow,
+        .sa-filter-btn {
+            transition: none;
+        }
+    }
+</style>
+
+
+<main class="sa-page">
+
+    <!-- BREADCRUMBS -->
+
+    <nav class="sa-breadcrumbs" aria-label="Breadcrumb">
+
+        <a href="{{ url_for('solutions_architect.topics') }}">
+            All Topics
+        </a>
+
+        <span class="sa-breadcrumb-divider" aria-hidden="true">
+            /
+        </span>
+
+        <a href="{{ url_for(
+            'solutions_architect.categories',
+            topic_id=topic.id
+        ) }}">
+            {{ topic.name }}
+        </a>
+
+        <span class="sa-breadcrumb-divider" aria-hidden="true">
+            /
+        </span>
+
+        <span class="sa-breadcrumb-current" aria-current="page">
+            {{ category.name }}
+        </span>
+
+    </nav>
+
+
+    <!-- PAGE HEADER -->
+
+    <header>
+
+        <div class="sa-eyebrow">
+            {{ topic.name }} / Question Library
+        </div>
+
+        <h1 class="sa-heading">
+            {{ category.name }}
+        </h1>
+
+        <p class="sa-description">
+            Explore architecture scenarios, identify
+            the important technical clues, and learn
+            why particular AWS solutions are appropriate.
+        </p>
+
+        {% set total_count = questions | length %}
+        {% set explained_count = (
+            questions | selectattr('is_enriched') | list | length
+        ) %}
+
+        <div class="sa-heading-stats">
+
+            <div class="sa-stat">
+                <span class="sa-stat-value">
+                    {{ total_count }}
+                </span>
+                <span class="sa-stat-label">
+                    Questions
+                </span>
+            </div>
+
+            <div class="sa-stat">
+                <span class="sa-stat-value">
+                    {{ explained_count }}
+                </span>
+                <span class="sa-stat-label">
+                    Explained
+                </span>
+            </div>
+
+            <div class="sa-stat">
+                <span class="sa-stat-value">
+                    {{ total_count - explained_count }}
+                </span>
+                <span class="sa-stat-label">
+                    Awaiting explanation
+                </span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- SEARCH AND FILTER CONTROLS -->
+
+    <section aria-label="Question search and filters">
+
+        <div class="sa-toolbar">
+
+            <label class="sa-search-wrap">
+
+                <svg
+                    class="sa-search-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+                    <circle cx="11" cy="11" r="7"/>
+                    <path d="m16 16 5 5"/>
+                </svg>
+
+                <input
+                    id="sa-question-search"
+                    class="sa-search-input"
+                    type="search"
+                    placeholder="Search questions or services..."
+                    aria-label="Search questions or AWS services"
+                    autocomplete="off"
+                >
+
+            </label>
+
+            <div
+                class="sa-filters"
+                role="group"
+                aria-label="Explanation availability"
+            >
+
+                <button
+                    type="button"
+                    class="sa-filter-btn is-active"
+                    data-filter="all"
+                    aria-pressed="true"
+                >
+                    All
+                </button>
+
+                <button
+                    type="button"
+                    class="sa-filter-btn"
+                    data-filter="explained"
+                    aria-pressed="false"
+                >
+                    Explained
+                </button>
+
+                <button
+                    type="button"
+                    class="sa-filter-btn"
+                    data-filter="not-enriched"
+                    aria-pressed="false"
+                >
+                    Not enriched
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUESTION RESULTS -->
+
+    <section aria-labelledby="sa-results-heading">
+
+        <div class="sa-results-header">
+
+            <h2
+                id="sa-results-heading"
+                class="sa-results-title"
+            >
+                Questions
+            </h2>
+
+            <span
+                id="sa-visible-count"
+                class="sa-result-count"
+                aria-live="polite"
+            >
+                {{ questions | length }} shown
+            </span>
+
+        </div>
+
+
+        {% if questions %}
+
+        <div
+            id="sa-question-list"
+            class="sa-question-list"
+        >
+
+            {% for question in questions %}
+
+            <a
+                class="sa-question-card"
+                href="{{ url_for(
+                    'solutions_architect.question_detail',
+                    question_id=question.id
+                ) }}"
+                data-enriched="{{ 'true' if question.is_enriched else 'false' }}"
+            >
+
+                <!-- CARD HEADER -->
+
+                <div class="sa-card-top">
+
+                    <span class="sa-question-number">
+                        QUESTION {{ "%02d" | format(loop.index) }}
+                    </span>
+
+                    <div class="sa-card-statuses">
+
+                        {% if question.is_enriched %}
+
+                        <span class="sa-status sa-status--explained">
+                            Explained
+                        </span>
+
+                        {% else %}
+
+                        <span class="sa-status">
+                            Awaiting explanation
+                        </span>
+
+                        {% endif %}
+
+
+                        {% if question.needs_review %}
+
+                        <span class="sa-status sa-status--review">
+                            Needs review
+                        </span>
+
+                        {% elif question.verification_status == "verified" %}
+
+                        <span class="sa-status sa-status--verified">
+                            Verified
+                        </span>
+
+                        {% elif question.verification_status == "guide_supported" %}
+
+                        <span class="sa-status">
+                            Guide-supported
+                        </span>
+
+                        {% endif %}
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUESTION TITLE -->
+
+                <h3 class="sa-card-title">
+
+                    {% if question.is_enriched %}
+                        {{ question.title }}
+                    {% else %}
+                        AWS Architecture Scenario
+                    {% endif %}
+
+                </h3>
+
+
+                <!-- QUESTION PREVIEW -->
+
+                <p class="sa-card-description">
+                    {{ question.question }}
+                </p>
+
+
+                <!-- AWS SERVICE TAGS -->
+
+                {% if question.services %}
+
+                <div class="sa-service-tags">
+
+                    {% for service in question.services[:5] %}
+
+                    <span class="sa-service-tag">
+                        {{ service }}
+                    </span>
+
+                    {% endfor %}
+
+                    {% if question.services | length > 5 %}
+
+                    <span class="sa-service-tag">
+                        +{{ question.services | length - 5 }}
+                    </span>
+
+                    {% endif %}
+
+                </div>
+
+                {% endif %}
+
+
+                <!-- CARD FOOTER -->
+
+                <div class="sa-card-footer">
+
+                    <span class="sa-difficulty">
+
+                        {% if question.difficulty %}
+                            {{ question.difficulty }}
+                        {% else %}
+                            AWS SAA-C03
+                        {% endif %}
+
+                    </span>
+
+                    <span class="sa-view-link">
+
+                        View breakdown
+
+                        <span class="sa-view-arrow" aria-hidden="true">
+                            &rarr;
+                        </span>
+
+                    </span>
+
+                </div>
+
+            </a>
+
+            {% endfor %}
+
+        </div>
+
+
+        <!-- FILTERED EMPTY STATE -->
+
+        <div
+            id="sa-filter-empty"
+            class="sa-empty"
+            hidden
+        >
+            No questions match your current search or filter.
+        </div>
+
+        {% else %}
+
+        <div class="sa-empty">
+            No questions are currently assigned
+            to this category.
+        </div>
+
+        {% endif %}
+
+    </section>
+
+</main>
+
+
+<!-- ---------------------------------------
+     LOCAL SEARCH AND FILTERS
+--------------------------------------- -->
+
+<script>
+(function () {
+    "use strict";
+
+    const searchInput = document.getElementById(
+        "sa-question-search"
+    );
+
+    const filterButtons = Array.from(
+        document.querySelectorAll(".sa-filter-btn")
+    );
+
+    const cards = Array.from(
+        document.querySelectorAll(".sa-question-card")
+    );
+
+    const visibleCount = document.getElementById(
+        "sa-visible-count"
+    );
+
+    const emptyState = document.getElementById(
+        "sa-filter-empty"
+    );
+
+    let activeFilter = "all";
+
+    function normalize(value) {
+        return value
+            .toLocaleLowerCase()
+            .replace(/\s+/g, " ")
+            .trim();
+    }
+
+    function updateResults() {
+        const query = normalize(searchInput.value);
+
+        let visible = 0;
+
+        for (const card of cards) {
+            const searchableText = normalize(
+                card.textContent
+            );
+
+            const isEnriched = (
+                card.dataset.enriched === "true"
+            );
+
+            const matchesSearch = (
+                !query || searchableText.includes(query)
+            );
+
+            const matchesFilter = (
+                activeFilter === "all" ||
+                (
+                    activeFilter === "explained" &&
+                    isEnriched
+                ) ||
+                (
+                    activeFilter === "not-enriched" &&
+                    !isEnriched
+                )
+            );
+
+            const show = (
+                matchesSearch && matchesFilter
+            );
+
+            card.hidden = !show;
+
+            if (show) {
+                visible += 1;
+            }
+        }
+
+        visibleCount.textContent = (
+            visible + " shown"
+        );
+
+        if (emptyState) {
+            emptyState.hidden = visible !== 0;
+        }
+    }
+
+    searchInput.addEventListener(
+        "input",
+        updateResults
+    );
+
+    for (const button of filterButtons) {
+        button.addEventListener("click", function () {
+            activeFilter = button.dataset.filter;
+
+            for (const item of filterButtons) {
+                const selected = item === button;
+
+                item.classList.toggle(
+                    "is-active",
+                    selected
+                );
+
+                item.setAttribute(
+                    "aria-pressed",
+                    String(selected)
+                );
+            }
+
+            updateResults();
+        });
+    }
+
+    updateResults();
+})();
+</script>
+
+{% endblock %}

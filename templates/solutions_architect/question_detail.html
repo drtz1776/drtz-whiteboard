@@ -1,0 +1,1026 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    /* ---------------------------------------
+       QUESTION DETAIL PAGE
+    --------------------------------------- */
+
+    .sa-page {
+        --sa-primary: #187ABA;
+        --sa-accent: #01AEEE;
+        --sa-text: #172B46;
+        --sa-muted: #66758A;
+        --sa-border: #E3EAF1;
+        --sa-surface: #F7F9FC;
+
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 48px 24px 96px;
+        color: var(--sa-text);
+        font-family: inherit;
+        line-height: 1.65;
+    }
+
+    .sa-page *,
+    .sa-page *::before,
+    .sa-page *::after {
+        box-sizing: border-box;
+    }
+
+    /* ---------------------------------------
+       NAVIGATION
+    --------------------------------------- */
+
+    .sa-breadcrumbs {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 9px;
+        margin-bottom: 35px;
+        font-size: 13px;
+        color: var(--sa-muted);
+    }
+
+    .sa-breadcrumbs a {
+        color: var(--sa-muted);
+        text-decoration: none;
+    }
+
+    .sa-breadcrumbs a:hover {
+        color: var(--sa-primary);
+    }
+
+    .sa-breadcrumb-current {
+        color: var(--sa-text);
+        font-weight: 600;
+    }
+
+    .sa-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 32px;
+        color: var(--sa-primary);
+        font-weight: 600;
+        font-size: 13px;
+        text-decoration: none;
+    }
+
+    /* ---------------------------------------
+       PAGE HEADER
+    --------------------------------------- */
+
+    .sa-eyebrow {
+        font-size: 12px;
+        color: var(--sa-primary);
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    .sa-title {
+        color: var(--sa-text);
+        font-size: clamp(28px, 4vw, 42px);
+        line-height: 1.2;
+        letter-spacing: -1px;
+        margin: 0 0 18px;
+    }
+
+    .sa-meta {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .sa-tag {
+        padding: 5px 10px;
+        border-radius: 6px;
+        background: #F0F7FC;
+        color: var(--sa-primary);
+        border: 1px solid #DCEAF5;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .sa-status {
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 6px;
+        background: #F1F4F8;
+        color: #59697E;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .sa-status--verified {
+        background: #E7F5EC;
+        color: #267746;
+    }
+
+    .sa-status--review {
+        background: #FFF2DE;
+        color: #94601B;
+    }
+
+    /* ---------------------------------------
+       CONTENT SECTIONS
+    --------------------------------------- */
+
+    .sa-section {
+        padding: 30px 0;
+        border-bottom: 1px solid var(--sa-border);
+    }
+
+    .sa-section-title {
+        font-size: 21px;
+        color: var(--sa-text);
+        letter-spacing: -.4px;
+        margin: 0 0 16px;
+        line-height: 1.35;
+    }
+
+    .sa-section-subtitle {
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--sa-text);
+        margin: 0 0 8px;
+    }
+
+    .sa-body {
+        color: #405069;
+        font-size: 14px;
+        line-height: 1.8;
+        margin: 0;
+        white-space: pre-line;
+        overflow-wrap: anywhere;
+    }
+
+    .sa-muted {
+        font-size: 13px;
+        color: var(--sa-muted);
+    }
+
+    /* ---------------------------------------
+       SCENARIO AND ANSWER
+    --------------------------------------- */
+
+    .sa-scenario {
+        background: #FFFFFF;
+        border: 1px solid var(--sa-border);
+        border-radius: 12px;
+        padding: 24px;
+    }
+
+    .sa-answer {
+        margin-top: 17px;
+        padding: 22px 24px;
+        border-left: 3px solid var(--sa-primary);
+        border-radius: 0 10px 10px 0;
+        background: #F1F8FD;
+    }
+
+    .sa-answer-label {
+        display: block;
+        margin-bottom: 10px;
+        color: var(--sa-primary);
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* ---------------------------------------
+       BULLETS AND CLUES
+    --------------------------------------- */
+
+    .sa-list {
+        margin: 0;
+        padding-left: 20px;
+        color: #405069;
+        font-size: 14px;
+    }
+
+    .sa-list li {
+        margin-bottom: 10px;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+    }
+
+    .sa-clue-list {
+        display: grid;
+        gap: 12px;
+    }
+
+    .sa-clue {
+        padding: 17px 19px;
+        background: #F8FAFD;
+        border: 1px solid var(--sa-border);
+        border-radius: 10px;
+    }
+
+    .sa-clue-phrase {
+        color: var(--sa-primary);
+        font-weight: 700;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    /* ---------------------------------------
+       ARCHITECTURAL HEURISTIC
+    --------------------------------------- */
+
+    .sa-heuristic {
+        padding: 23px;
+        background: #F1F8FD;
+        border: 1px solid #DBEAF5;
+        border-radius: 12px;
+    }
+
+    .sa-heuristic-pattern {
+        color: var(--sa-primary);
+        font-weight: 700;
+        font-size: 14px;
+        margin: 0 0 12px;
+    }
+
+    /* ---------------------------------------
+       SERVICE CARDS
+    --------------------------------------- */
+
+    .sa-service-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .sa-service-card {
+        padding: 21px;
+        border: 1px solid var(--sa-border);
+        border-radius: 11px;
+        background: #FFFFFF;
+        min-width: 0;
+    }
+
+    .sa-service-name {
+        font-weight: 700;
+        color: var(--sa-text);
+        font-size: 16px;
+        margin: 0 0 8px;
+    }
+
+    /* ---------------------------------------
+       EXAM TAKEAWAY
+    --------------------------------------- */
+
+    .sa-takeaway {
+        padding: 26px;
+        background: #F1F8FD;
+        border: 1px solid #D7E8F5;
+        border-radius: 12px;
+    }
+
+    .sa-takeaway p {
+        font-weight: 600;
+        color: var(--sa-text);
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    /* ---------------------------------------
+       EVIDENCE REFERENCES
+    --------------------------------------- */
+
+    .sa-source-list {
+        display: grid;
+        gap: 12px;
+    }
+
+    .sa-source {
+        padding: 18px 20px;
+        background: #FFFFFF;
+        border: 1px solid var(--sa-border);
+        border-radius: 10px;
+    }
+
+    .sa-source a {
+        display: inline-block;
+        color: var(--sa-primary);
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+    }
+
+    .sa-source a:hover {
+        text-decoration: underline;
+    }
+
+    .sa-source-meta {
+        color: var(--sa-muted);
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .sa-claim {
+        padding: 14px 0;
+        border-bottom: 1px solid var(--sa-border);
+    }
+
+    .sa-claim:last-child {
+        border-bottom: none;
+    }
+
+    /* ---------------------------------------
+       WARNINGS AND EMPTY CONTENT
+    --------------------------------------- */
+
+    .sa-notice {
+        padding: 18px 20px;
+        background: #FFF8EA;
+        border: 1px solid #F0DFBB;
+        border-radius: 10px;
+        color: #795921;
+        font-size: 13px;
+        line-height: 1.7;
+        margin-bottom: 22px;
+    }
+
+    .sa-empty {
+        padding: 28px;
+        background: var(--sa-surface);
+        border: 1px dashed var(--sa-border);
+        border-radius: 10px;
+        color: var(--sa-muted);
+        font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+        .sa-page {
+            padding: 32px 18px 64px;
+        }
+
+        .sa-service-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .sa-scenario,
+        .sa-answer,
+        .sa-takeaway {
+            padding: 19px;
+        }
+
+        .sa-section {
+            padding: 24px 0;
+        }
+    }
+</style>
+
+
+<main class="sa-page">
+
+    <!-- BREADCRUMBS -->
+
+    <nav class="sa-breadcrumbs" aria-label="Breadcrumb">
+
+        <a href="{{ url_for('solutions_architect.topics') }}">
+            All Topics
+        </a>
+
+        {% if topic %}
+
+        <span aria-hidden="true">/</span>
+
+        <a href="{{ url_for(
+            'solutions_architect.categories',
+            topic_id=topic.id
+        ) }}">
+            {{ topic.name }}
+        </a>
+
+        {% endif %}
+
+        {% if topic and category %}
+
+        <span aria-hidden="true">/</span>
+
+        <a href="{{ url_for(
+            'solutions_architect.questions',
+            topic_id=topic.id,
+            category_id=category.id
+        ) }}">
+            {{ category.name }}
+        </a>
+
+        {% endif %}
+
+        <span aria-hidden="true">/</span>
+
+        <span class="sa-breadcrumb-current" aria-current="page">
+            Question
+        </span>
+
+    </nav>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="sa-eyebrow">
+            AWS Architecture Breakdown
+        </div>
+
+        <h1 class="sa-title">
+
+            {% if is_enriched %}
+                {{ learning.title }}
+            {% else %}
+                AWS Architecture Scenario
+            {% endif %}
+
+        </h1>
+
+        <div class="sa-meta">
+
+            {% for service in question.classification.services %}
+
+            <span class="sa-tag">
+                {{ service }}
+            </span>
+
+            {% endfor %}
+
+            {% if needs_review %}
+
+            <span class="sa-status sa-status--review">
+                Needs review
+            </span>
+
+            {% elif is_verified %}
+
+            <span class="sa-status sa-status--verified">
+                Verified
+            </span>
+
+            {% elif verification.status == "guide_supported" %}
+
+            <span class="sa-status">
+                Guide-supported
+            </span>
+
+            {% elif verification.status == "insufficient_evidence" %}
+
+            <span class="sa-status sa-status--review">
+                Insufficient evidence
+            </span>
+
+            {% else %}
+
+            <span class="sa-status">
+                Verification pending
+            </span>
+
+            {% endif %}
+
+        </div>
+
+    </header>
+
+
+    <!-- ORIGINAL SCENARIO -->
+
+    <section class="sa-section">
+
+        <h2 class="sa-section-title">
+            Original Question
+        </h2>
+
+        <div class="sa-scenario">
+
+            <p class="sa-body">
+                {{ question.original.question }}
+            </p>
+
+            {% if question.original.options %}
+
+            <h3 class="sa-section-subtitle"
+                style="margin-top:20px;">
+                Answer Options
+            </h3>
+
+            <ol class="sa-list">
+
+                {% for option in question.original.options %}
+
+                <li>{{ option }}</li>
+
+                {% endfor %}
+
+            </ol>
+
+            {% endif %}
+
+        </div>
+
+
+        <!-- SOURCE ANSWER -->
+
+        <div class="sa-answer">
+
+            <span class="sa-answer-label">
+                Original Source Answer
+            </span>
+
+            <p class="sa-body">
+                {{ question.original.answer }}
+            </p>
+
+            {% if not is_verified %}
+
+            <p class="sa-muted" style="margin:12px 0 0;">
+                Preserved from the imported question bank.
+                Not independently verified against
+                official AWS documentation.
+            </p>
+
+            {% endif %}
+
+        </div>
+
+    </section>
+
+
+    {% if not is_enriched %}
+
+    <!-- NOT YET ENRICHED -->
+
+    <section class="sa-section">
+
+        <h2 class="sa-section-title">
+            Explanation Not Yet Available
+        </h2>
+
+        <div class="sa-empty">
+            This question has been imported into the
+            study library, but its structured learning
+            explanation has not yet been generated.
+
+            The original question and source answer
+            remain available above.
+        </div>
+
+    </section>
+
+    {% else %}
+
+
+    <!-- REVIEW WARNINGS -->
+
+    {% if needs_review or verification.flags %}
+
+    <div class="sa-notice" role="note">
+
+        <strong>Content review notice</strong>
+
+        <p style="margin:8px 0 0;">
+            Some aspects of this answer or explanation
+            may require further evidence or technical review.
+        </p>
+
+        {% if verification.flags %}
+
+        <ul>
+            {% for flag in verification.flags %}
+            <li>{{ flag }}</li>
+            {% endfor %}
+        </ul>
+
+        {% endif %}
+
+        {% if question.review.notes %}
+
+        <ul>
+            {% for note in question.review.notes %}
+            <li>{{ note }}</li>
+            {% endfor %}
+        </ul>
+
+        {% endif %}
+
+    </div>
+
+    {% endif %}
+
+
+    <!-- SCENARIO SUMMARY -->
+
+    <section class="sa-section">
+
+        <h2 class="sa-section-title">
+            Understanding the Scenario
+        </h2>
+
+        <p class="sa-body">
+            {{ learning.scenario_summary }}
+        </p>
+
+        {% if learning.requirements %}
+
+        <h3 class="sa-section-subtitle"
+            style="margin-top:22px;">
+            Architectural Requirements
+        </h3>
+
+        <ul class="sa-list">
+
+            {% for requirement in learning.requirements %}
+            <li>{{ requirement }}</li>
+            {% endfor %}
+
+        </ul>
+
+        {% endif %}
+
+    </section>
+
+
+    <!-- KEY SCENARIO CLUES -->
+
+    {% if learning.key_clues %}
+
+    <section class="sa-section">
+
+        <h2 class="sa-section-title">
+            Key Scenario Clues
+        </h2>
+
+        <p class="sa-muted">
+            The phrases that help identify the
+            architectural problem and requirements.
+        </p>
+
+        <div class="sa-clue-list">
+
+            {% for clue in learning.key_clues %}
+
+            <div class="sa-clue">
+
+                <div class="sa-clue-phrase">
+                    {{ clue.phrase }}
+                </div>
+
+                <p class="sa-body">
+                    {{ clue.meaning }}
+                </p>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+    {% endif %}
+
+
+    <!-- ARCHITECTURAL HEURISTIC -->
+
+    <section class="sa-section">
+
+        <h2 class="sa-section-title">
+            Architectural Heuristic
+        </h2>
+
+        <div class="sa-heuristic">
+
+            <p class="sa-heuristic-pattern">
+                {{ learning.heuristic.pattern }}
+            </p>
+
+            <h3 class="sa-section-subtitle">
+                Decision Rule
+            </h3>
+
+            <p class="sa-body">
+                {{ learning.heuristic.decision_rule }}
+            </p>
+
+            {% if learning.heuristic.exceptions %}
+
+            <h3 class="sa-section-subtitle"
+                style="margin-top:20px;">
+                Exceptions and Caveats
+            </h3>
+
+            <ul class="sa-list">
+
+                {% for exception in learning.heuristic.exceptions %}
+                <li>{{ exception }}</li>
+                {% endfor %}
+
+            </ul>
+
+            {% endif %}
+
+        </div>
+
+    </section>
+
+
+    <!-- AWS SERVICE BREAKDOWN -->
+
+    {% if learning.service_breakdown %}
+
+    <section class="sa-section">
+
+        <h2 class="sa-section-title">
+            AWS Service Breakdown
+        </h2>
+
+        <div class="sa-service-grid">
+
+            {% for service in learning.service_breakdown %}
+
+            <article class="sa-service-card">
+
+                <h3 class="sa-service-name">
+                    {{ service.name }}
+                </h3>
+
+                <p class="sa-body">
+                    {{ service.role }}
+                </p>
+
+                {% if service.important_facts %}
+
+                <ul class="sa-list"
+                    style="margin-top:14px;">
+
+                    {% for fact in service.important_facts %}
+                    <li>{{ fact }}</li>
+                    {% endfor %}
+
+                </ul>
+
+                {% endif %}
+
+            </article>
+
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+    {% endif %}
+
+
+    <!-- WHY THE ANSWER WINS -->
+
+    {% if learning.why_answer_wins %}
+
+    <section class="sa-section">
+
+        <h2 class="sa-section-title">
+            Evaluating the Proposed Answer
+        </h2>
+
+        <p class="sa-muted">
+            The generated explanation of why the
+            supplied answer fits the scenario,
+            subject to the verification status above.
+        </p>
+
+        <ul class="sa-list">
+
+            {% for reason in learning.why_answer_wins %}
+            <li>{{ reason }}</li>
+            {% endfor %}
+
+        </ul>
+
+    </section>
+
+    {% endif %}
+
+
+    <!-- ALTERNATIVES -->
+
+    {% if learning.alternatives_and_tradeoffs %}
+
+    <section class="sa-section">
+
+        <h2 class="sa-section-title">
+            Alternatives and Tradeoffs
+        </h2>
+
+        <ul class="sa-list">
+
+            {% for alternative in learning.alternatives_and_tradeoffs %}
+            <li>{{ alternative }}</li>
+            {% endfor %}
+
+        </ul>
+
+    </section>
+
+    {% endif %}
+
+
+    <!-- EXAM TAKEAWAY -->
+
+    {% if learning.exam_takeaway %}
+
+    <section class="sa-section">
+
+        <h2 class="sa-section-title">
+            Exam Takeaway
+        </h2>
+
+        <div class="sa-takeaway">
+
+            <p>
+                {{ learning.exam_takeaway }}
+            </p>
+
+        </div>
+
+    </section>
+
+    {% endif %}
+
+
+    <!-- SOURCE REFERENCES -->
+
+    <section class="sa-section">
+
+        <h2 class="sa-section-title">
+            Supporting References
+        </h2>
+
+        <p class="sa-muted">
+            Source material retrieved during the
+            offline enrichment pipeline.
+            A reference link does not, by itself,
+            establish that every technical claim
+            is correct.
+        </p>
+
+        {% if verification.sources %}
+
+        <div class="sa-source-list">
+
+            {% for source in verification.sources %}
+
+            <article class="sa-source">
+
+                <a
+                    href="{{ source.url }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {{ source.title }}
+                </a>
+
+                <div class="sa-source-meta">
+
+                    {% if source.heading %}
+                    Section: {{ source.heading }}
+                    {% endif %}
+
+                    {% if source.start_line and source.end_line %}
+                    · Lines {{ source.start_line }}–{{ source.end_line }}
+                    {% endif %}
+
+                    <br>
+
+                    {% if source.source_type == "aws_documentation" %}
+                        Official AWS documentation
+                    {% else %}
+                        Community study guide
+                    {% endif %}
+
+                </div>
+
+            </article>
+
+            {% endfor %}
+
+        </div>
+
+        {% else %}
+
+        <div class="sa-empty">
+            No supporting references have been
+            attached to this explanation yet.
+        </div>
+
+        {% endif %}
+
+    </section>
+
+
+    <!-- CLAIM AUDIT -->
+
+    {% if verification.claims %}
+
+    <section class="sa-section">
+
+        <h2 class="sa-section-title">
+            Technical Claim Review
+        </h2>
+
+        <p class="sa-muted">
+            Automated assessments against the
+            attached reference material.
+        </p>
+
+        {% for claim in verification.claims %}
+
+        <div class="sa-claim">
+
+            <p class="sa-body">
+                {{ claim.claim }}
+            </p>
+
+            <div style="margin:10px 0;">
+
+                {% if claim.status == "supported" %}
+
+                <span class="sa-status">
+                    Supported by cited material
+                </span>
+
+                {% elif claim.status == "contradicted" %}
+
+                <span class="sa-status sa-status--review">
+                    Potential contradiction
+                </span>
+
+                {% elif claim.status == "insufficient_evidence" %}
+
+                <span class="sa-status sa-status--review">
+                    Insufficient evidence
+                </span>
+
+                {% else %}
+
+                <span class="sa-status">
+                    Pending review
+                </span>
+
+                {% endif %}
+
+            </div>
+
+            {% if claim.explanation %}
+
+            <p class="sa-muted">
+                {{ claim.explanation }}
+            </p>
+
+            {% endif %}
+
+        </div>
+
+        {% endfor %}
+
+    </section>
+
+    {% endif %}
+
+    {% endif %}
+
+
+    <!-- RETURN NAVIGATION -->
+
+    {% if topic and category %}
+
+    <a class="sa-back" href="{{ url_for(
+        'solutions_architect.questions',
+        topic_id=topic.id,
+        category_id=category.id
+    ) }}">
+        &larr; Back to {{ category.name }}
+    </a>
+
+    {% else %}
+
+    <a class="sa-back"
+       href="{{ url_for('solutions_architect.topics') }}">
+        &larr; Back to Study Topics
+    </a>
+
+    {% endif %}
+
+</main>
+
+{% endblock %}
