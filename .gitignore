@@ -5,3 +5,4 @@ __pycache__/
 .env
 .DS_Storequizlet-export/
 quizlet-export/
+solutions_architect/data/knowledge_base/source/aws-saa-c03-guides/
