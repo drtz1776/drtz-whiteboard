@@ -1,0 +1,65 @@
+{
+  "total_enriched_questions": 6,
+  "status_counts": {
+    "insufficient_evidence": 1,
+    "needs_review": 1,
+    "pending": 4
+  },
+  "questions": [
+    {
+      "question_id": "q_88b8616a477675b2",
+      "verification_status": "insufficient_evidence",
+      "answer_supported": null,
+      "claim_count": 18,
+      "flags": [
+        "No explicit passage describes Redshift ML details or its serverless integration, so that part relies on common AWS knowledge beyond the provided passages.",
+        "Passages do not explicitly mention Glue for this exact use case; the usage is inferred from Glue's general ETL role in analytics workloads.",
+        "No evidence about the orchestration of Glue jobs on a daily schedule is provided, which is relevant for the daily logs requirement."
+      ]
+    },
+    {
+      "question_id": "q_ff1100adba293e87",
+      "verification_status": "needs_review",
+      "answer_supported": true,
+      "claim_count": 17,
+      "flags": [
+        "The source answer suggests SQS standard queue with Lambda and DynamoDB which aligns with best practices for serverless, auto-scaled ingestion.",
+        "No conflicting evidence found in supplied references.",
+        "The supplied passages do not explicitly mention exact architectural patterns for car-as-a-sensor applications.",
+        "No detailed comparison of Kinesis vs SQS in this specific sensor scenario is provided, limiting coverage of alternative approaches.",
+        "The supplied passages do not explicitly address 'car-as-a-sensor' applications specifically, so domain-specific considerations are absent.",
+        "No detailed direct comparison of Kinesis versus SQS for sensor data ingestion scenario is present, limiting assessment of alternatives.",
+        "Some latency claims for downstream querying are not fully supported by the evidence.",
+        "Overall, the evidence is sufficient to support the architectural claims about use of SQS + Lambda + DynamoDB for fully serverless, auto-scaled ingestion."
+      ]
+    },
+    {
+      "question_id": "q_8b3131bc5ad1ced8",
+      "verification_status": "pending",
+      "answer_supported": null,
+      "claim_count": 0,
+      "flags": []
+    },
+    {
+      "question_id": "q_2f4e9cb695459e43",
+      "verification_status": "pending",
+      "answer_supported": null,
+      "claim_count": 0,
+      "flags": []
+    },
+    {
+      "question_id": "q_314ac23ee0e0d120",
+      "verification_status": "pending",
+      "answer_supported": null,
+      "claim_count": 0,
+      "flags": []
+    },
+    {
+      "question_id": "q_b20621068cc4762b",
+      "verification_status": "pending",
+      "answer_supported": null,
+      "claim_count": 0,
+      "flags": []
+    }
+  ]
+}
